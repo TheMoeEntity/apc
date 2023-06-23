@@ -1,8 +1,21 @@
 "use client";
 import styles from "./index.module.css";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
+import { sendMail } from "@/utils/contact";
 
 const Consultation = () => {
+  const handlesubmit = e => {
+		e.preventDefault()
+    const data = {
+			firstName: "Moses",
+			lastName: "Nwigberi",
+			email: 'mosesnwigberi@gmail.com',
+			phone:"08075489362",
+			message: "Hello World"
+		}
+    sendMail(data)
+	}
+
   return (
     <div className={styles.about}>
       <div className={styles.overlay}></div>
@@ -14,7 +27,7 @@ const Consultation = () => {
             look forward to meeting you and earning your business.
           </span>
         </div>
-        <form action="">
+        <form onSubmit={handlesubmit}>
           <div className={styles.formGroup}>
             <input type="text" placeholder="Name*" />
             <input type="text" placeholder="Phone*" />

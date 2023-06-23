@@ -14,13 +14,13 @@ const Sophie = () => {
       child.children[2].style.maxHeight = "0";
       child.children[2].style.padding = "0 40px";
       child.children[2].style.maxHeight = "0";
-      child.children[0].style.background = "black";
+      child.children[0].style.background = "#0A1849";
       child.children[0].style.color = "white";
       child.children[1].style.background = "transparent";
     }
 
     e.target.style.background =
-      height === "" || height === "0px" ? "#B7A189" : "black";
+      height === "" || height === "0px" ? "#B7A189" : "#0A1849";
     e.target.style.color =
       height === "" || height === "0px" ? "black" : "white";
     e.target.children[0].children[0].className =

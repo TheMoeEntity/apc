@@ -101,14 +101,14 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div>
+        {/* <div>
           <h2>NEWSLETTER</h2>
           <form action="">
             Tetur adipiscing elit, sed do eiusmod tempor in cididunt ut labore
             <input placeholder="Your Email Address" type="text" />
             <button type="submit">SUBSCRIBE NOW</button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.copyright}>

@@ -36,12 +36,12 @@ const About = () => {
               assets, avoid costly and time-consuming probate while minimizing
               taxes. Ms. Nosrati takes personal pride in educating clients about
               the available options in both maximizing the value of their estate
-              by minimizing taxes, as well as protecting their families' and
+              by minimizing taxes, as well as protecting their {`families'`} and
               their legacies. She deeply values each client relationship when
               creating a personalized plan for each client. Our comprehensive
               basic estate planning will include a Will, Revocable Trust, Power
               of Attorney, Advance Health Care Directives and other related
-              documents.  Please contact our office for a free and confidential
+              documents. Please contact our office for a free and confidential
               consultation. We look forward to getting to know you
             </p>
           </div>

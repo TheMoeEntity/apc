@@ -1,9 +1,9 @@
 import { About } from '@/components/About'
+import { Consultation } from '@/components/Consultation'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Services } from '@/components/Service'
 import { Sophie } from '@/components/Sophie'
-import Image from 'next/image'
 import styles from './page.module.css'
 
 
@@ -15,6 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <Sophie />
+      <Consultation />
     </main>
   )
 }

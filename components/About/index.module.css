@@ -34,13 +34,20 @@
   .cards > div {
     height: 100%;
     transition: 0.5s;
-    height: 300px;
+    height: auto;
     cursor: pointer;
     flex: 33.333333%;
-    padding: 0px 35px;
+    padding: 40px 35px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+  }
+  .cards > div ul {
+    margin: 20px;
+    font-size: 10px;
+  }
+  .cards > div ul li {
+    margin: 10px 0;
   }
   
   .cards > div > div {
@@ -50,7 +57,7 @@
     transition: 1.7s;
   }
   .cards > div > div p {
-    font-size: 14.5px;
+    font-size: 10px;
     line-height: 1.9;
   }
   .cards > div:nth-child(2) {

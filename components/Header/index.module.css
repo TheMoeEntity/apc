@@ -229,8 +229,8 @@
     z-index: 111111;
     transition: 0.5s;
     background-color: rgb(241, 237, 237);
-    background-color: #b7a1898e;
-    /* color: white; */
+    background-color: #0A1849;
+    color: white;
     /* background-color: #F7F7F7; */
 }
 .isSticky {
@@ -240,7 +240,6 @@
     z-index: 111111;
     animation: 500ms ease-in 0s normal none 1 running fadeInDown;
     animation: bounce2 1.2s;
-    background-color: #b7a189c8;
 }
 
 @keyframes bounce2 {

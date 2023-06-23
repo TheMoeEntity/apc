@@ -228,8 +228,8 @@
     position: sticky;
     z-index: 111111;
     transition: 0.5s;
-
-    
+    background-color: rgb(241, 237, 237);
+    /* background-color: #F7F7F7; */
 }
 .isSticky {
     position: fixed;

@@ -84,7 +84,7 @@ const Services = () => {
         </h2>
       </div>
       <div ref={grid} className={styles.grid}>
-        {assets.map((x, i) => (
+        {assets.map((x, i) =>  (
           <div key={i}>
             <div className={styles.overlay}>
               <div>READ MORE</div>

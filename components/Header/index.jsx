@@ -1,6 +1,6 @@
 "use client";
 import styles from "./index.module.css";
-import logo from "../../public/images/logo-dark.png";
+import logo from "../../public/images/nosratilogo.png";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";

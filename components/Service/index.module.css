@@ -80,18 +80,15 @@
 }
 .grid > div h4 {
     font-size: 18px;
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
 }
 .grid > div.addWidth {
     transform: translateX(0);
     opacity: 1;
 }
-.grid > div:hover .overlay {
-    opacity: 1;
-}
-.grid > div:hover .tab {
-    right: -100%;
-    opacity: 0;
-}
+
 .tab {
     position: absolute;
     width: 100%;

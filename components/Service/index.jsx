@@ -76,7 +76,7 @@ const Services = () => {
     }
   };
   return (
-    <div className={styles.products}>
+    <div id="services" className={styles.products}>
       <div ref={container} className={styles.caption}>
         <b>WHAT WE ARE EXPERT AT</b>
         <h2>

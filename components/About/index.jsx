@@ -119,7 +119,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className={styles.main}>
+      <div id="about" className={styles.main}>
         <div className={styles.man}>
           <Image
             src={man}
@@ -132,7 +132,7 @@ const About = () => {
           />
         </div>
         <div className={styles.stuff}>
-          <div className={styles.img}>
+          <div  className={styles.img}>
             <div>
               <Image
                 src={shape}

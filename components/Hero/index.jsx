@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
               specializing in estate planning
             </span>
             <button>
-              Contact now <i>&#10230;</i>
+              <Link href={`#contact`}> Contact now <i>&#10230;</i></Link>
             </button>
           </div>
           <div className={styles.overlay}></div>
@@ -57,7 +58,7 @@ const Hero = () => {
               years of experience
             </span>
             <button>
-              Contact now <i>&#10230;</i>
+            <Link href={`#contact`}> Contact now <i>&#10230;</i></Link>
             </button>
           </div>
           <div className={styles.overlay}></div>

@@ -16,6 +16,7 @@
     transition: 0.7s;
     display: none;
     overflow-y: scroll;
+    background-color: #060c20c5;
 }
 .sidecontent {
     position: absolute;
@@ -31,12 +32,14 @@
     padding: 20px 40px;
     color: black;
     min-height: 100vh;
+    background-color: #0a1849f1;
+    color: #B7A189;
 }
 .close {
     position: absolute;
     top: 20px;
     right: 55px;
-    color: black;
+    color:#B7A189;
     font-size: 40px;
     font-weight: 200;
 }
@@ -53,7 +56,7 @@
     height: auto;
     font-weight: bold;
     list-style-type: none;
-    border-bottom: 1px solid #f1f1f3;
+    border-bottom: 0.01px solid #f1f1f315;
     display: flex;
     font-size: medium;
     flex-flow: row wrap;
@@ -140,7 +143,7 @@
     height: 50px;
     font-weight: bold;
     list-style-type: none;
-    border-bottom: 1px solid #f1f1f3;
+    border-bottom: 0.01px solid #f1f1f315;
     display: flex;
     font-size: medium;
     flex-flow: row wrap;
@@ -161,7 +164,7 @@
     height: 50px;
     font-weight: bold;
     list-style-type: none;
-    border-bottom: 1px solid #f1f1f3;
+    border-bottom: 0.01px solid #f1f1f315;
     display: flex;
     font-size: medium;
     flex-flow: row wrap;

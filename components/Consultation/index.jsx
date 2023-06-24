@@ -1,11 +1,15 @@
 "use client";
 import styles from "./index.module.css";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
-import { sendMail } from "@/utils/contact";
-import { checkEnvironment } from "@/utils/checkEnvironment";
+import axios from "axios";
+import { useSnackbar } from "notistack";
+import { useState } from "react";
 
 const Consultation = () => {
-  const handlesubmit = (e) => {
+  const { enqueueSnackbar } = useSnackbar();
+  const [submit,setSubmit] = useState('SUBMIT NOW')
+  const handlesubmit = async (e) => {
+    setSubmit("Sending message....")
     e.preventDefault();
     const data = {
       firstName: e.target[0].value,
@@ -16,35 +20,30 @@ const Consultation = () => {
         "Hello Mr Syks, This is the message from the site: " +
         e.target[4].value,
     };
-     sendMail(data)
-    // fetch(checkEnvironment().concat("/api/contact"), {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then(async (res) => {
-    //     const isJson = res.headers
-    //       .get("content-type")
-    //       ?.includes("application/json");
-    //     const data = isJson ? await res.json() : null;
 
-    //     if (!res.ok) {
-    //       const error = (data && data.message) || res.status;
-    //       alert("There was an error")
-    //       return Promise.reject(error);
-    //     } else if (res.ok) {
-    //       alert("mail sent successfully")
-    //       return res.json();
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     alert("There was an error 2")
-    //     console.log(err);
-    //   });
-    e.target.reset();
+    try {
+      const url = "/api/contact";
+      const res = await axios.post(url, data);
+
+      res.status === 200 &&
+        enqueueSnackbar("Message successfully sent", {
+          variant: "success",
+        });
+      console.log(res.status);
+      console.log(res);
+      setTimeout(() => {
+        e.target.reset();
+      }, 3000);
+    } catch (error) {
+      enqueueSnackbar(
+        "There was an error sending message, try again: " + error,
+        {
+          variant: "error",
+        }
+      );
+      console.log(error);
+    }
+    setSubmit("SUBMIT NOW")
   };
 
   return (
@@ -68,7 +67,7 @@ const Consultation = () => {
             <input type="text" placeholder="Email*" />
           </div>
           <textarea placeholder="Message*" name=""></textarea>
-          <button type="submit">SUBMIT NOW</button>
+          <button type="submit">{submit}</button>
         </form>
       </div>
       <ParallaxProvider>

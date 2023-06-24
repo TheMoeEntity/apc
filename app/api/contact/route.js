@@ -55,7 +55,7 @@ require("dotenv").config();
 // }
 
 export async function POST(req, res) {
-  const { firstName, lastName, email, phone, message } = await req.json();
+  const { firstName, address, email, phone, message } = await req.json();
   //require("dotenv").config();
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
@@ -70,12 +70,13 @@ export async function POST(req, res) {
   let mailData = {
     from: "Mrs Nosrati Law Group",
     to: "mosesnwigberi@gmail.com",
-    subject: `You have a message from ${firstName} NLG website`,
+    subject: `You have a message from ${firstName} in the NLG website`,
     text: message + "| Sent from: " + email,
     html: `<div>
                 ${message}
                 </div><p>Sent from: ${email} <br />
-                Sender's phone: ${phone}
+                Sender's phone: ${phone} <br />
+                Sender's address: ${address}
                 `,
   };
   await new Promise((resolve, reject) => {

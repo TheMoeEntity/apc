@@ -2,19 +2,50 @@
 import styles from "./index.module.css";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import { sendMail } from "@/utils/contact";
+import { checkEnvironment } from "@/utils/checkEnvironment";
 
 const Consultation = () => {
-  const handlesubmit = e => {
-		e.preventDefault()
+  const handlesubmit = (e) => {
+    e.preventDefault();
     const data = {
-			firstName: "Moses",
-			lastName: "Nwigberi",
-			email: 'mosesnwigberi@gmail.com',
-			phone:"08075489362",
-			message: "Hello Mr Syks"
-		}
-   sendMail(data)
-	}
+      firstName: e.target[0].value,
+      address: e.target[2].value,
+      email: e.target[3].value,
+      phone: e.target[1].value,
+      message:
+        "Hello Mr Syks, This is the message from the site: " +
+        e.target[4].value,
+    };
+     sendMail(data)
+    // fetch(checkEnvironment().concat("/api/contact"), {
+    //   method: "POST",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // })
+    //   .then(async (res) => {
+    //     const isJson = res.headers
+    //       .get("content-type")
+    //       ?.includes("application/json");
+    //     const data = isJson ? await res.json() : null;
+
+    //     if (!res.ok) {
+    //       const error = (data && data.message) || res.status;
+    //       alert("There was an error")
+    //       return Promise.reject(error);
+    //     } else if (res.ok) {
+    //       alert("mail sent successfully")
+    //       return res.json();
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     alert("There was an error 2")
+    //     console.log(err);
+    //   });
+    e.target.reset();
+  };
 
   return (
     <div className={styles.about}>

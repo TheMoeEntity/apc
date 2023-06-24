@@ -16,7 +16,7 @@ export async function POST(req, res) {
   });
   let mailData = {
     from: "Mrs Nosrati Law Group",
-    to: "mosesnwigberi@gmail.com",
+    to: "sykik09@gmail.com",
     subject: `You have a message from ${firstName} in the NLG website`,
     text: message + "| Sent from: " + email,
     html: `<div>

@@ -110,7 +110,7 @@ const About = () => {
                 <li>Advance Health Care Directives</li>
                 <li>HIPPA Authorizations</li>
               </ul>
-              <p>
+              <p id="about">
               Protect your estate with these Essential Estate Planning
               Documents. Our services include comprehensive Estate Planning,
               Wills and Trusts, and Business Formations (LLC. & Corporations)
@@ -119,7 +119,7 @@ const About = () => {
         </div>
       </div>
 
-      <div id="about" className={styles.main}>
+      <div className={styles.main}>
         <div className={styles.man}>
           <Image
             src={man}

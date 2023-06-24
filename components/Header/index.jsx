@@ -70,13 +70,13 @@ const Header = () => {
             <li>
               <span>Home</span>
             </li>
-            <li onClick={()=> setSideBar(false)}>
+            <li onClick={() => setSideBar(false)}>
               <Link href={`#about`}>About</Link>
             </li>
             <li onClick={showMore}>
               <span>
-              <Link href={`#services`}>Services</Link>
-                </span>
+                <Link href={`#services`}>Services</Link>
+              </span>
               <span>
                 <i className="fa fa-plus"></i>
               </span>
@@ -107,7 +107,7 @@ const Header = () => {
                 <i className="fa fa-plus"></i>
               </span>
             </li>
-            <li onClick={()=> setSideBar(false)}>
+            <li onClick={() => setSideBar(false)}>
               <Link href={"#contact"}>Contact</Link>
             </li>
           </ul>
@@ -196,10 +196,12 @@ const Header = () => {
               </div>
             </li>
             <li>
-            <Link href={`#about`}>About</Link>
+              <Link href={`#about`}>
+                <span>About</span>
+              </Link>
             </li>
             <li>
-            <Link href={`#services`}>Services +</Link>
+              <Link href={`#services`}>Services +</Link>
               <div className={styles.dropdn}>
                 <ul>
                   <li>Services Style 1</li>

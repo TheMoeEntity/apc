@@ -13,7 +13,7 @@ const Consultation = () => {
 			phone:"08075489362",
 			message: "Hello Mr Syks"
 		}
-    sendMail(data)
+   sendMail(data)
 	}
 
   return (

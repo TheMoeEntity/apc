@@ -11,7 +11,7 @@ const Consultation = () => {
 			lastName: "Nwigberi",
 			email: 'mosesnwigberi@gmail.com',
 			phone:"08075489362",
-			message: "Hello World"
+			message: "Hello Mr Syks"
 		}
     sendMail(data)
 	}

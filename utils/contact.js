@@ -1,5 +1,5 @@
 "use server";
-import { checkEnvironment } from "./checkEnvironment";
+import { checkEnvironment } from ".";
 
 export async function sendMail(data) {
     fetch(checkEnvironment().concat('/api/contact'), {

@@ -4,6 +4,7 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import axios from "axios";
 import { useSnackbar } from "notistack";
 import { useState } from "react";
+import { isValidEmail } from "@/utils";
 
 const Consultation = () => {
   const { enqueueSnackbar } = useSnackbar();
@@ -17,9 +18,24 @@ const Consultation = () => {
       email: e.target[3].value,
       phone: e.target[1].value,
       message:
-        "Hello Mr Syks, This is the message from the site: " +
+        // "Hello Mr Syks, This is the message from the site: " +
         e.target[4].value,
     };
+    
+
+    if (!(isValidEmail(data.email))) {
+      enqueueSnackbar("Your email is invalid", {
+        variant: "error",
+      });
+      setSubmit("SUBMIT NOW")
+      return
+    } else if (data.message === '' || data.message.length <= 10 ) {
+      enqueueSnackbar("Message cannot be empty or short", {
+        variant: "error",
+      });
+      setSubmit("SUBMIT NOW")
+      return
+    }
 
     try {
       const url = "/api/contact";
@@ -59,11 +75,11 @@ const Consultation = () => {
         </div>
         <form onSubmit={handlesubmit}>
           <div className={styles.formGroup}>
-            <input type="text" placeholder="Name*" />
-            <input type="text" placeholder="Phone*" />
+            <input type="text" placeholder="Name*" required />
+            <input type="text" placeholder="Phone*" required/>
           </div>
           <div className={styles.formGroup}>
-            <input type="text" placeholder="Address*" />
+            <input type="text" placeholder="Address*" required/>
             <input type="text" placeholder="Email*" />
           </div>
           <textarea placeholder="Message*" name=""></textarea>

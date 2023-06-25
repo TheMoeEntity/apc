@@ -6,3 +6,7 @@ export const checkEnvironment = () => {
   
     return base_url;
   };
+
+  export const isValidEmail = mail => {
+     return /\S+@\S+\.\S+/.test(mail)
+  }

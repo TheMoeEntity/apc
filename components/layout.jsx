@@ -7,14 +7,14 @@ import { usePathname } from 'next/navigation'
 
 const Layout = ({ children }) => {
   const pathname = usePathname()
-  console.log(pathname)
+
   return (
     <SnackbarProvider
       classes={{ containerRoot: "z-alert" }}
       anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
     >
       {
-        pathname === '/404' ? (<></>): (<Header />)
+        pathname !== '/' ? (<></>): (<Header />)
       }
       {children}
       <Script
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         crossorigin="anonymous"
       ></Script>
       {
-        pathname === '/404' ? (<></>): (<Footer />)
+        pathname !== '/' ? (<></>): (<Footer />)
       }
     </SnackbarProvider>
   );

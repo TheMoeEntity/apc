@@ -37,7 +37,7 @@ const Sophie = () => {
       height === "" || height === "0px" ? "scale(1.12)" : "none";
   };
   return (
-    <div className={styles.benefits}>
+    <div id="team" className={styles.benefits}>
       <div>
         <div className={styles.caption}>
           <span>YOUR BENEFIT</span>

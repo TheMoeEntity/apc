@@ -77,35 +77,9 @@ const Header = () => {
               <span>
                 <Link href={`#services`}>Services</Link>
               </span>
-              <span>
-                <i className="fa fa-plus"></i>
-              </span>
             </li>
-            <li ref={more} className={styles.more}>
-              <ul>
-                <li>Service Style 1</li>
-                <li>Service Style 2</li>
-                <li onClick={innerAction}>
-                  <span>Services Style 3</span>
-                  <span>
-                    <i className="fa fa-plus"></i>
-                  </span>
-                </li>
-                <ul ref={inner} className={styles.inner}>
-                  <li>General Construction</li>
-                  <li>Property Maintenance</li>
-                  <li>Preconstruction</li>
-                  <li>Virtual Design and Build</li>
-                  <li>Project management</li>
-                  <li>Design Build</li>
-                </ul>
-              </ul>
-            </li>
-            <li>
-              <span>Pages</span>
-              <span>
-                <i className="fa fa-plus"></i>
-              </span>
+            <li onClick={() => setSideBar(false)}>
+              <Link href={"#team"}>Team</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
               <Link href={"#contact"}>Contact</Link>
@@ -157,43 +131,7 @@ const Header = () => {
         <div className={styles.links}>
           <ul>
             <li>
-              <Link href={"/"}> Home + </Link>
-              <div className={styles.dropdn}>
-                <ul>
-                  <li className={styles.multiple}>
-                    Single Pages +
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Singin Out Loud</li>
-                        <li>Nothing can stop me</li>
-                        <li>Service Single 3</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Dolor SIt </li>
-                        <li>Moses Pages</li>
-                        <li>Sex Playlist</li>
-                        <li>Bunch of words</li>
-                        <li>Sia is the greatest</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className={styles.multiple}>
-                    Multiple Pages +
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Services Style 1</li>
-                        <li>Services Style 2</li>
-                        <li>Service Single 3</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Dolor SIt </li>
-                        <li>Moses Pages</li>
-                        <li>Sex Playlist</li>
-                        <li>Bunch of words</li>
-                        <li>Sia is the greatest</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <Link href={"/"}> Home</Link>
             </li>
             <li>
               <Link href={`#about`}>
@@ -201,38 +139,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href={`#services`}>Services +</Link>
-              <div className={styles.dropdn}>
-                <ul>
-                  <li>Services Style 1</li>
-                  <li>Services Style 2</li>
-                  <li>Service Single</li>
-                </ul>
-              </div>
+              <Link href={`#services`}>Services </Link>
             </li>
             <li>
-              Pages +
-              <div className={styles.dropdn}>
-                <ul>
-                  <li className={styles.multiple}>
-                    Team
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Team Style 1</li>
-                        <li>Team Style 2</li>
-                        <li>Team Style 3</li>
-                        <li>Team Style 4</li>
-                        <li>Team Style 5 </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>Projects</li>
-                  <li>Pricing Plan</li>
-                  <li>Faq</li>
-                  <li>Gallery</li>
-                  <li>Shop</li>
-                </ul>
-              </div>
+            <Link href={"#team"}>Team</Link>
             </li>
             <li>
               <Link href={"#contact"}>Contact</Link>

@@ -100,7 +100,12 @@ a {
 }
 html {
   scroll-behavior: smooth !important;
-  scroll-padding-top: 160px;
+<<<<<<< HEAD
+  scroll-padding-top: 4rem;
+=======
+  scroll-padding-top: 4rem;
+  
+>>>>>>> b6d02998d994597f03691a2e549abecf6f76eac7
 }
 @media (prefers-color-scheme: dark) {
   html {

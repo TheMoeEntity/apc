@@ -2,8 +2,13 @@
     width: 100%;
     height: auto;
     position: relative;
+<<<<<<< HEAD
     scroll-margin-top: 120px;
     /* scroll-padding-top: 150px; */
+=======
+    scroll-margin-top:120px;
+    
+>>>>>>> b6d02998d994597f03691a2e549abecf6f76eac7
 }
 .overlay {
     position: absolute;

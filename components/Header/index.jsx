@@ -93,7 +93,7 @@ const Header = () => {
             <li onClick={() => setSideBar(false)}>
               <Link href={`#about`}>About</Link>
             </li>
-            <li onClick={showMore}>
+            <li onClick={() => setSideBar(false)}>
               <span>
                 <Link href={`#services`}>Services</Link>
               </span>

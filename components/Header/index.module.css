@@ -228,7 +228,7 @@
     box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2);
     z-index: 999999999;
     top: 0;
-    position: sticky;
+    position: relative;
     z-index: 100;
     transition: 0.5s;
     background-color: rgb(241, 237, 237);
@@ -243,6 +243,15 @@
     z-index: 100;
     animation: 500ms ease-in 0s normal none 1 running fadeInDown;
     animation: bounce2 1.2s;
+    visibility: visible;
+}
+.isHideSticky {
+    position: relative;
+    top:0;
+    left: 0;
+    z-index: 1001;
+    /* animation: 500ms ease-in 0s normal none 1 running fadeInDown;
+    animation: bounce2 1.2s; */
     visibility: visible;
 }
 

@@ -100,11 +100,13 @@ a {
 }
 html {
   scroll-behavior: smooth !important;
+  scroll-padding-top: 160px;
 }
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
+    scroll-padding-top: 160px;
   }
 }
 

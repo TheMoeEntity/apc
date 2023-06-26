@@ -4,11 +4,14 @@ import logo from "../../public/images/nosratilogo.png";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter()
   const [sidebar, setSideBar] = useState(false);
   const sideContent = useRef(null);
   const [sticky, setSticky] = useState("");
+  const [hideSticky, setHideSticky] = useState("");
   const headerRef = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -17,6 +20,23 @@ const Header = () => {
       window.removeEventListener("scroll", isSticky);
     };
   }, []);
+
+  // useEffect(() => {
+  //   if (hideSticky === styles.isHideSticky) {
+  //     setTimeout(() => {
+  //       window.addEventListener("scroll", removSticky);
+  //     }, 800);
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("scroll", removSticky);
+  //   };
+
+  // }, [hideSticky])
+  
+  const removSticky =()=> {
+    setHideSticky('')
+  }
 
   const isSticky = () => {
     const scrollTop = window.scrollY;
@@ -49,11 +69,11 @@ const Header = () => {
     more.current.style.maxHeight =
       height === "" || height === "0px" ? `${elemHeight}px` : "0";
   };
-  const innerAction = () => {
-    const elemHeight = inner.current.scrollHeight;
-    const height = inner.current.style.maxHeight;
-    inner.current.style.maxHeight =
-      height === "" || height === "0px" ? `${elemHeight}px` : "0";
+  const LinkAction = page => {
+    router.push(`/#${page}`)
+    // setTimeout(() => {
+    //   setHideSticky(styles.isHideSticky)
+    // }, 900);
   };
 
   return (
@@ -114,7 +134,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.headerTwo} ${sticky}`}>
+      <div className={`${styles.headerTwo} ${sticky} ${hideSticky}`}>
         <div>
           <Link href={`/`}>
             <Image
@@ -131,21 +151,23 @@ const Header = () => {
         <div className={styles.links}>
           <ul>
             <li>
-              <Link href={"/"}> Home</Link>
+              <Link href={"/"}>
+                Home
+              </Link>
             </li>
             <li>
               <Link href={`#about`}>
                 <span>About</span>
               </Link>
             </li>
-            <li>
-              <Link href={`#services`}>Services </Link>
+            <li onClick={() => LinkAction('services')}>
+              Services
             </li>
             <li>
             <Link href={"#team"}>Team</Link>
             </li>
-            <li>
-              <Link href={"#contact"}>Contact</Link>
+            <li onClick={() => LinkAction('contact')}>
+              Contact
             </li>
           </ul>
         </div>

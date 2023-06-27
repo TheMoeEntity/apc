@@ -155,16 +155,14 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link href={`#about`}>
-                <span>About</span>
-              </Link>
+            <li onClick={()=> LinkAction('about')}>
+                About
             </li>
             <li onClick={() => LinkAction('services')}>
               Services
             </li>
-            <li>
-            <Link href={"#team"}>Team</Link>
+            <li onClick={()=> LinkAction('team')}>
+              Team
             </li>
             <li onClick={() => LinkAction('contact')}>
               Contact

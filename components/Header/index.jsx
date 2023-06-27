@@ -21,23 +21,6 @@ const Header = () => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (hideSticky === styles.isHideSticky) {
-  //     setTimeout(() => {
-  //       window.addEventListener("scroll", removSticky);
-  //     }, 800);
-  //   }
-
-  //   return () => {
-  //     window.removeEventListener("scroll", removSticky);
-  //   };
-
-  // }, [hideSticky])
-  
-  const removSticky =()=> {
-    setHideSticky('')
-  }
-
   const isSticky = () => {
     const scrollTop = window.scrollY;
     let number = headerRef.current.style.display === "" ? 120 : 175;
@@ -71,9 +54,7 @@ const Header = () => {
   };
   const LinkAction = page => {
     router.push(`/#${page}`)
-    // setTimeout(() => {
-    //   setHideSticky(styles.isHideSticky)
-    // }, 900);
+
   };
 
   return (
@@ -169,12 +150,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.search}>
+        {/* <div className={styles.search}>
           <div>
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div>{`LETS`} TALK</div>
-        </div>
+        </div> */}
         <div onClick={show} className={styles.bars}>
           <i className="fa-solid fa-bars"></i>
         </div>

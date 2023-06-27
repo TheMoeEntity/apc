@@ -64,6 +64,9 @@
     align-items: center;
     transition: 0.7s;
 }
+.links {
+    margin-right: 200px;
+}
 .links > ul > li {
     position: relative;
     height: 110px;

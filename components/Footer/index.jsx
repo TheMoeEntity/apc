@@ -119,13 +119,13 @@ const Footer = () => {
               Home <i className="fas fa-circle"></i>
             </li>
             <li>
-              About <i className="fas fa-circle"></i>
+            <Link href="/#about">About</Link><i className="fas fa-circle"></i>
             </li>
             <li>
-              Services <i className="fas fa-circle"></i>
+            <Link href="/#services">Services</Link> <i className="fas fa-circle"></i>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/#contact">Contact</Link>
             </li>
           </ul>
         </div>

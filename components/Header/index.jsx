@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
-  const router = useRouter()
+  const router = useRouter();
   const [sidebar, setSideBar] = useState(false);
   const sideContent = useRef(null);
   const [sticky, setSticky] = useState("");
@@ -52,9 +52,8 @@ const Header = () => {
     more.current.style.maxHeight =
       height === "" || height === "0px" ? `${elemHeight}px` : "0";
   };
-  const LinkAction = page => {
-    router.push(`/#${page}`)
-
+  const LinkAction = (page) => {
+    router.push(`/#${page}`);
   };
 
   return (
@@ -96,22 +95,21 @@ const Header = () => {
         <div>
           <div>
             <i className="fa fa-phone"></i> 310-288-9780
-            &nbsp;&nbsp;&nbsp;&nbsp;|
+            &nbsp;&nbsp;&nbsp;&nbsp;·
           </div>
           <div>
             <i className="fa fa-envelope"></i> 9777 Wilshire Blvd., Suite 400
-            &nbsp;&nbsp;&nbsp;&nbsp;|
+            &nbsp;&nbsp;&nbsp;&nbsp;·
           </div>
         </div>
 
         <div>
           <div>
             <i style={{ color: "#B7A189" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;|
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-pinterest"></i>
+            Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
+            <span className={styles.freeConsult}>
+              <i className="fa-solid fa-envelope"></i> Free Consultation
+            </span>
           </div>
         </div>
       </div>
@@ -132,22 +130,12 @@ const Header = () => {
         <div className={styles.links}>
           <ul>
             <li>
-              <Link href={"/"}>
-                Home
-              </Link>
+              <Link href={"/"}>Home</Link>
             </li>
-            <li onClick={()=> LinkAction('about')}>
-                About
-            </li>
-            <li onClick={() => LinkAction('services')}>
-              Services
-            </li>
-            <li onClick={()=> LinkAction('team')}>
-              Team
-            </li>
-            <li onClick={() => LinkAction('contact')}>
-              Contact
-            </li>
+            <li onClick={() => LinkAction("about")}>About</li>
+            <li onClick={() => LinkAction("services")}>Services</li>
+            <li onClick={() => LinkAction("team")}>Team</li>
+            <li onClick={() => LinkAction("contact")}>Contact</li>
           </ul>
         </div>
         {/* <div className={styles.search}>

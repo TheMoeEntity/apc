@@ -34,7 +34,7 @@ export async function POST(req, res) {
         reject("This is the error" + err);
       } else {
         resolve(info);
-        return NextResponse.json({ error: "All Done" }, { status: 200 });
+        return NextResponse.json({ error: "All Done" }, { status: 20 });
       }
     });
   });

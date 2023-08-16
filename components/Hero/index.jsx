@@ -28,14 +28,16 @@ const Hero = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className={styles.caption}>
-         
             <h1>PROFESSIONAL LAW FIRM</h1>
             <span>
               Nosrati Law Group, APC is a boutique client-centered practice
               specializing in estate planning
             </span>
             <button>
-              <Link href={`#contact`}> Contact now <i>&#10230;</i></Link>
+              <Link href={`#contact`}>
+                {" "}
+                Contact now <i>&#10230;</i>
+              </Link>
             </button>
           </div>
           <div className={styles.overlay}></div>
@@ -51,14 +53,16 @@ const Hero = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className={styles.caption}>
-            
             <h1 style={{ fontSize: "40px" }}>Nosrati Law Group, APC</h1>
             <span>
               We are a leading law firm in estate planning. With more than 20
               years of experience
             </span>
             <button>
-            <Link href={`#contact`}> Contact now <i>&#10230;</i></Link>
+              <Link href={`#contact`}>
+                {" "}
+                Contact now <i>&#10230;</i>
+              </Link>
             </button>
           </div>
           <div className={styles.overlay}></div>

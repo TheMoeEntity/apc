@@ -1,7 +1,7 @@
 require("dotenv").config();
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 
-export async function POST(req, res) {
+export async function POST(req: NextRequest, res: NextResponse) {
   const { firstName, address, email, phone, message } = await req.json();
   require("dotenv").config();
   let nodemailer = require("nodemailer");

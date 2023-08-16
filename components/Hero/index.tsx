@@ -13,8 +13,8 @@ const Hero = () => {
       <Fade
         arrows={true}
         infinite={true}
-        duration={`7000`}
-        transitionDuration={`400`}
+        duration={7000}
+        transitionDuration={400}
         indicators={true}
       >
         <div className={styles.hero}>

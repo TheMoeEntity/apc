@@ -4,13 +4,13 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import axios from "axios";
 import { useSnackbar } from "notistack";
 import { useState } from "react";
-import { isValidEmail } from "@/utils";
+import { isValidEmail } from "../../utils";
 
 const Consultation = () => {
   const { enqueueSnackbar } = useSnackbar();
-  const [submit,setSubmit] = useState('SUBMIT NOW')
+  const [submit, setSubmit] = useState("SUBMIT NOW");
   const handlesubmit = async (e) => {
-    setSubmit("Sending message....")
+    setSubmit("Sending message....");
     e.preventDefault();
     const data = {
       firstName: e.target[0].value,
@@ -21,20 +21,19 @@ const Consultation = () => {
         // "Hello Mr Syks, This is the message from the site: " +
         e.target[4].value,
     };
-    
 
-    if (!(isValidEmail(data.email))) {
+    if (!isValidEmail(data.email)) {
       enqueueSnackbar("Your email is invalid", {
         variant: "error",
       });
-      setSubmit("SUBMIT NOW")
-      return
-    } else if (data.message === '' || data.message.length <= 10 ) {
+      setSubmit("SUBMIT NOW");
+      return;
+    } else if (data.message === "" || data.message.length <= 10) {
       enqueueSnackbar("Message cannot be empty or short", {
         variant: "error",
       });
-      setSubmit("SUBMIT NOW")
-      return
+      setSubmit("SUBMIT NOW");
+      return;
     }
 
     try {
@@ -59,7 +58,7 @@ const Consultation = () => {
       );
       console.log(error);
     }
-    setSubmit("SUBMIT NOW")
+    setSubmit("SUBMIT NOW");
   };
 
   return (
@@ -76,10 +75,10 @@ const Consultation = () => {
         <form onSubmit={handlesubmit}>
           <div className={styles.formGroup}>
             <input type="text" placeholder="Name*" required />
-            <input type="text" placeholder="Phone*" required/>
+            <input type="text" placeholder="Phone*" required />
           </div>
           <div className={styles.formGroup}>
-            <input type="text" placeholder="Address*" required/>
+            <input type="text" placeholder="Address*" required />
             <input type="text" placeholder="Email*" />
           </div>
           <textarea placeholder="Message*" name=""></textarea>

@@ -1,82 +1,101 @@
 .hero {
-    width: 100%;
-    min-height: 440px;
-    position: relative;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: red;
 }
-@media screen and (min-width:850px) {
-    .hero {
-        min-height: 550px;
-    }
-}
+
 .caption {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    text-align: center;
-    color: whitesmoke;
-    z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index: 20;
+}
+.caption p {
+  font-weight: 300;
+}
+.caption > div:first-child {
+  height: 400px;
+  flex: 42%;
+  position: relative;
+  /* overflow: hidden;
+  border-radius: 15px; */
+}
+.caption > div:nth-child(2) {
+  height: 400px;
+  flex: 58%;
+  position: relative;
+  padding: 25px 60px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.caption > div:first-child img {
+  object-fit: cover;
 }
 .caption span:nth-child(1) {
-    color: white;
-    font-weight: 400;
-    opacity:1;
+  color: white;
+  font-weight: 400;
+  opacity: 1;
 }
-.caption > span{
-    color: white;
-    font-size: 19px;
-    display: block;
-    width: 60%;
-    margin: 15px auto;
+.caption > span {
+  color: white;
+  font-size: 19px;
+  display: block;
+  width: 60%;
+  margin: 15px auto;
 }
 .caption h1 {
-    margin:10px 0;
-    font-size: 45px;
+  margin: 10px 0;
+  font-size: 45px;
 }
 .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(0,0,0,0.25);
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
 }
 .caption button {
-    color: white;
-    margin-top: 30px;
-    background: none;
-    border:1px solid #B7A189;
-    border-radius: 9px;
-    font-size: 15px;
-    padding: 15px 20px;
-    cursor:pointer;
+  color: white;
+  margin-top: 30px;
+  background: #b7a189;
+  border: none;
+  outline: none;
+  width: fit-content;
+  border-radius: 9px;
+  font-size: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
 }
-/* .page {
-    position: absolute;
-    bottom:-35px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-} */
+
 .page > div {
-    width: 10px;
-    height: 10px;
-    background-color: lightgray;
-    border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
 }
 .page > div:nth-child(1) {
-    background-color: rgb(132, 132, 132);
+  background-color: rgb(132, 132, 132);
 }
-@media screen and (max-width:600px) {
-    .caption h1 {
-        font-size: 30px;
-    }
-    .caption span {
-        width: 90%;
-    }
+/* @media screen and (min-width: 850px) {
+  .hero {
+    min-height: 550px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  .caption h1 {
+    font-size: 30px;
+  }
+  .caption span {
+    width: 90%;
+  }
 }

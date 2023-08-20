@@ -241,7 +241,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0 60px;
-  box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2);
+  /* box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2); */
   z-index: 999999999;
   top: 0;
   position: relative;

@@ -1,5 +1,5 @@
 "use client";
-import { Header } from "./Header";
+import { Header } from "./Header/index";
 import Script from "next/script";
 import { SnackbarProvider } from "notistack";
 import Footer from "./Footer";
@@ -13,13 +13,13 @@ const Layout = ({ children }) => {
       classes={{ containerRoot: "z-alert" }}
       anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
     >
-      {pathname !== "/" ? <></> : <Header />}
+      <Header />
       {children}
       <Script
         src="https://kit.fontawesome.com/4ef8c63dd7.js"
         crossOrigin="anonymous"
       ></Script>
-      {pathname !== "/" ? <></> : <Footer />}
+      <Footer />
     </SnackbarProvider>
   );
 };

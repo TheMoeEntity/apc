@@ -52,8 +52,8 @@ const Header = () => {
     more.current.style.maxHeight =
       height === "" || height === "0px" ? `${elemHeight}px` : "0";
   };
-  const LinkAction = (page) => {
-    router.push(`/#${page}`);
+  const LinkAction = (page: string) => {
+    router.push(`/${page}`);
   };
 
   return (

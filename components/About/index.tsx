@@ -71,11 +71,11 @@ const About = () => {
               office, with its over 25 years of legal experience and planning
               for estates large and small, will be here to assist you every step
               of the way. Our personal touch and customized planning will guide
-              you to find the best available options for your {`family’s`} personal
-              and financial needs, in the most tax-efficient manner.   We work
-              with individuals, families and business owners in helping them
-              leave a meaningful and lasting legacy. In general, an Estate Plan
-              can be implemented by either the use of a Will or Trust. In
+              you to find the best available options for your {`family’s`}{" "}
+              personal and financial needs, in the most tax-efficient manner.  
+              We work with individuals, families and business owners in helping
+              them leave a meaningful and lasting legacy. In general, an Estate
+              Plan can be implemented by either the use of a Will or Trust. In
               deciding which instrument is most useful to you, please keep the
               following in mind:
             </p>
@@ -99,18 +99,18 @@ const About = () => {
           </div>
           <div>
             <p>
-              We offer established and competitive open pricing for all
-              services provided. No hidden costs or fees. Packages available.
-              Please contact the office for a quote. Packages Include:
+              We offer established and competitive open pricing for all services
+              provided. No hidden costs or fees. Packages available. Please
+              contact the office for a quote. Packages Include:
             </p>
-              <ul>
-                <li>Revocable Living Trust</li>
-                <li>Wills</li>
-                <li>Financial Powers of Attorney</li>
-                <li>Advance Health Care Directives</li>
-                <li>HIPPA Authorizations</li>
-              </ul>
-              <p id="about">
+            <ul>
+              <li>Revocable Living Trust</li>
+              <li>Wills</li>
+              <li>Financial Powers of Attorney</li>
+              <li>Advance Health Care Directives</li>
+              <li>HIPPA Authorizations</li>
+            </ul>
+            <p id="about">
               Protect your estate with these Essential Estate Planning
               Documents. Our services include comprehensive Estate Planning,
               Wills and Trusts, and Business Formations (LLC. & Corporations)
@@ -132,7 +132,7 @@ const About = () => {
           />
         </div>
         <div className={styles.stuff}>
-          <div  className={styles.img}>
+          <div className={styles.img}>
             <div>
               <Image
                 src={shape}

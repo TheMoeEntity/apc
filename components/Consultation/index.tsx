@@ -3,13 +3,13 @@ import styles from "./index.module.css";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import axios from "axios";
 import { useSnackbar } from "notistack";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { isValidEmail } from "../../utils";
 
 const Consultation = () => {
   const { enqueueSnackbar } = useSnackbar();
   const [submit, setSubmit] = useState("SUBMIT NOW");
-  const handlesubmit = async (e) => {
+  const handlesubmit = async (e: FormEvent<HTMLFormElement>) => {
     setSubmit("Sending message....");
     e.preventDefault();
     const data = {
@@ -47,7 +47,7 @@ const Consultation = () => {
       console.log(res.status);
       console.log(res);
       setTimeout(() => {
-        e.target.reset();
+        (e.target as HTMLFormElement).reset();
       }, 3000);
     } catch (error) {
       enqueueSnackbar(

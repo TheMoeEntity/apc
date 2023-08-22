@@ -35,9 +35,8 @@ const ProcessPage = () => {
           <div className={styles.man}>
             <Image
               src={man}
-              objectFit="cover"
               alt="card-image"
-              layout="fill"
+              fill={true}
               quality={100}
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -48,9 +47,8 @@ const ProcessPage = () => {
               <div>
                 <Image
                   src={shape}
-                  objectFit="cover"
                   alt="card-image"
-                  layout="fill"
+                  fill={true}
                   quality={100}
                   priority={true}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

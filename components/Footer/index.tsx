@@ -14,9 +14,8 @@ const Footer = () => {
           <div className={styles.logo}>
             <Image
               src={logo}
-              objectFit="cover"
               alt="card-image"
-              layout="fill"
+              fill={true}
               quality={100}
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -40,9 +39,8 @@ const Footer = () => {
             <div style={{ width: "30px", height: "30px" }}>
               <Image
                 src={icon1}
-                objectFit="cover"
                 alt="card-image"
-                layout="fill"
+                fill={true}
                 quality={100}
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -55,9 +53,8 @@ const Footer = () => {
             <div style={{ width: "30px", height: "30px" }}>
               <Image
                 src={icon1}
-                objectFit="cover"
                 alt="card-image"
-                layout="fill"
+                fill={true}
                 quality={100}
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -69,9 +66,8 @@ const Footer = () => {
             <div style={{ width: "30px", height: "30px" }}>
               <Image
                 src={icon3}
-                objectFit="cover"
                 alt="card-image"
-                layout="fill"
+                fill={true}
                 quality={100}
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

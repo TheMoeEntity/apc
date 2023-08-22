@@ -5,7 +5,4 @@ module.exports = {
   experimental: {
     serverActions: true,
   },
-  resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
-  },
 };

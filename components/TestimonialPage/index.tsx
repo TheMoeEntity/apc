@@ -68,7 +68,6 @@ const TestimonialPage = () => {
                 <div className={styles.profile}>
                   <Image
                     src={firm}
-                    objectFit="cover"
                     alt="card-image"
                     fill
                     quality={100}

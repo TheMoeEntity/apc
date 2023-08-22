@@ -73,8 +73,9 @@ const ServicePage = () => {
                 <div onClick={(e) => accordion(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
-                  </span>{" "}
-                  &nbsp;&nbsp;&nbsp;COMPREHENSIVE ESTATE PLANNING.
+                  </span>
+                  &nbsp;&nbsp;&nbsp;
+                  <span>Comprehensive Estate Planning</span>
                 </div>
                 <div></div>
                 <div style={{ fontSize: "12px" }}>
@@ -111,7 +112,7 @@ const ServicePage = () => {
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
-                  &nbsp;&nbsp;&nbsp; WILLS
+                  &nbsp;&nbsp;&nbsp; Wills
                 </div>
                 <div></div>
                 <div style={{ fontSize: "12.5px" }}>
@@ -136,7 +137,7 @@ const ServicePage = () => {
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
-                  &nbsp;&nbsp;&nbsp; TRUST
+                  &nbsp;&nbsp;&nbsp; Trust
                 </div>
                 <div></div>
                 <div style={{ fontSize: "12.5px" }}>
@@ -196,7 +197,7 @@ const ServicePage = () => {
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
-                  &nbsp;&nbsp;&nbsp; POWER OF ATTORNEY
+                  &nbsp;&nbsp;&nbsp; Power Of Attorney
                 </div>
                 <div></div>
                 <div style={{ fontSize: "12px" }}>
@@ -213,8 +214,8 @@ const ServicePage = () => {
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
-                  &nbsp;&nbsp;&nbsp; MEDICAL HEALTH CARE DIRECTIVES & HIPPA
-                  RELEASE
+                  &nbsp;&nbsp;&nbsp;
+                  <span>Medical Health Care Direcives & HIPPA Release</span>
                 </div>
                 <div></div>
                 <div style={{ fontSize: "12.5px" }}>

@@ -124,4 +124,19 @@
     background-position: left;
     background-attachment: scroll;
   }
+  .cards {
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .cards > div {
+    height: 200px;
+    flex: 100%;
+    max-width: 350px;
+    margin: 20px 0px;
+  }
+  .content {
+    width: 100%;
+    padding: 80px 15px;
+    color: #555555;
+  }
 }

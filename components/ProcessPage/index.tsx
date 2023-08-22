@@ -84,33 +84,46 @@ const ProcessPage = () => {
                 <div className={styles.check}>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp; &nbsp;Complete and send back the New Client
-                    Questionnaire
+                    &nbsp; &nbsp;
+                    <span>
+                      Complete and send back the New Client Questionnaire
+                    </span>
                   </div>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp;&nbsp;Initial Consultation to discuss your goals and
-                    needs. If mutually agreeable, we engage in an attorney
-                    client relationship.
+                    &nbsp;&nbsp;
+                    <span>
+                      Initial Consultation to discuss your goals and needs. If
+                      mutually agreeable, we engage in an attorney client
+                      relationship.
+                    </span>
                   </div>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp;&nbsp;Design Meeting: You complete your Estate
-                    Planning Worksheet and provide supporting documentation.
+                    &nbsp;&nbsp;
+                    <span>
+                      Design Meeting: You complete your Estate Planning
+                      Worksheet and provide supporting documentation.
+                    </span>
                   </div>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp;&nbsp;A draft is provided to you for review.
+                    &nbsp;&nbsp;
+                    <span>A draft is provided to you for review.</span>
                   </div>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp;&nbsp;Signing Meeting. Your documents are signed and
-                    notarized.
+                    &nbsp;&nbsp;
+                    <span>
+                      Signing Meeting. Your documents are signed and notarized.
+                    </span>
                   </div>
                   <div>
                     <i className="fa-solid fa-circle-check"></i>
-                    &nbsp;&nbsp;You fund your trust by transferring assets to
-                    your trust.
+                    &nbsp;&nbsp;
+                    <span>
+                      You fund your trust by transferring assets to your trust.
+                    </span>
                   </div>
                 </div>
               </div>

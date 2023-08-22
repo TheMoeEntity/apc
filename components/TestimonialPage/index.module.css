@@ -59,10 +59,84 @@
   display: block;
   background-color: #0a1849;
 }
+.content {
+  padding: 70px 30px 100px 30px;
+}
+.content h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.grid > div {
+  flex: 29%;
+  margin: 20px;
+  height: auto;
+}
+.grid > div p {
+  color: #737373;
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+}
+.grid > div > div:nth-child(1) {
+  position: relative;
+  padding: 15px;
+  height: fit-content;
+}
+.quotes {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-size: 30px;
+  color: #737373;
+}
+.quoteRight {
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+  font-size: 30px;
+}
+.grid > div > div:nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+}
+.profile {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin: 15px;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
 @media screen and (max-width: 600px) {
   .hero {
     height: 420px;
     background-position: left;
     background-attachment: scroll;
+  }
+  .grid {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  .grid > div {
+    flex: 100%;
+    margin: 20px 0;
+  }
+  .profile {
+    width: 70px;
+    height: 70px;
   }
 }

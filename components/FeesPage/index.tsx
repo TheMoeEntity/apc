@@ -34,7 +34,6 @@ const FeesPage = () => {
         </div>
       </div>
       <div className={styles.content}>
-        <span>Our Fees and Practice Areas</span>
         <h2>FEES & PRACTICE AREAS</h2>
         <p>
           We offer transparent and competitive open pricing for all services

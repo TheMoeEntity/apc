@@ -71,18 +71,21 @@ const Header = () => {
               <span>Home</span>
             </li>
             <li onClick={() => setSideBar(false)}>
-              <Link href={`#about`}>About</Link>
+              <Link href={`/about`}>About</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
               <span>
-                <Link href={`#services`}>Services</Link>
+                <Link href={`/services`}>Services</Link>
               </span>
             </li>
             <li onClick={() => setSideBar(false)}>
-              <Link href={"#team"}>Team</Link>
+              <Link href={"/process"}>Process</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
-              <Link href={"#contact"}>Contact</Link>
+              <Link href={"/fees"}>Fees</Link>
+            </li>
+            <li onClick={() => setSideBar(false)}>
+              <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -107,7 +110,10 @@ const Header = () => {
           <div>
             <i style={{ color: "#B7A189" }} className="fa fa-clock"></i> Hours:
             Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
-            <span className={styles.freeConsult}>
+            <span
+              onClick={() => router.push("/#contact")}
+              className={styles.freeConsult}
+            >
               <i className="fa-solid fa-envelope"></i> Free Consultation
             </span>
           </div>

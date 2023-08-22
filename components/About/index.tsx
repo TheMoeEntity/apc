@@ -2,12 +2,10 @@
 import styles from "./index.module.css";
 import Image from "next/image";
 import man from "../../public/images/column-bg2.png";
-import abzt from "../../public/images/headshot.png";
 import shape from "../../public/images/shape-1.png";
-import one1 from "../../public/images/one1.png";
-import one2 from "../../public/images/one2.png";
-import one3 from "../../public/images/one3.png";
+
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -55,34 +53,9 @@ const About = () => {
             future. Learn more
           </p>
           <div className={styles.abzt}>
-            {/* <div>
-              <Image
-                src={abzt}
-                objectFit="cover"
-                alt="card-image"
-                layout="fill"
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div> */}
-            {/* <div>
-              <div className={styles.check}>
-                <div>
-                  <i className="fa-solid fa-circle-check"></i>
-                  &nbsp; &nbsp;Pre-construction services
-                </div>
-                <div>
-                  <i className="fa-solid fa-circle-check"></i>
-                  &nbsp;&nbsp; Industrial manufacturing
-                </div>
-                <div>
-                  <i className="fa-solid fa-circle-check"></i>
-                  &nbsp;&nbsp; Building and construction
-                </div>
-              </div>
-            </div> */}
-            <button>KNOW MORE</button>
+            <Link href="/about">
+              <button>KNOW MORE</button>
+            </Link>
           </div>
         </div>
       </div>

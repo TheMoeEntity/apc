@@ -2,7 +2,7 @@
 import { Header } from "./Header/index";
 import Script from "next/script";
 import { SnackbarProvider } from "notistack";
-import Footer from "./Footer";
+import Footer from "./Footer/index.tsx";
 import { usePathname } from "next/navigation";
 
 const Layout = ({ children }) => {

@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   color: whitesmoke;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
 }
 .freeConsult {
@@ -213,6 +213,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   color: #8e8e8e;
+  font-weight: 300;
   padding: 0 60px;
 }
 .headerOne > div {
@@ -330,6 +331,7 @@
   }
   .headerTwo {
     padding: 0 30px;
+    height: 75px;
   }
 }
 @media screen and (max-width: 1051px) {

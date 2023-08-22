@@ -84,6 +84,10 @@ const Footer = () => {
           <h2>OUR SERVICES</h2>
           <div>
             <i className="fa fa-angle-right"></i>
+            Comprehensive Estate Planning
+          </div>
+          <div>
+            <i className="fa fa-angle-right"></i>
             Wills
           </div>
           <div>
@@ -97,18 +101,11 @@ const Footer = () => {
           <div>
             <i className="fa fa-angle-right"></i>
             <span style={{ fontSize: "15px", textAlign: "center" }}>
-              Medical Health Care Directives <br /> &nbsp;&nbsp;&nbsp;&nbsp;
+              Medical Health Care Directives & HIPPA release <br />{" "}
+              &nbsp;&nbsp;&nbsp;&nbsp;
             </span>
           </div>
         </div>
-        {/* <div>
-          <h2>NEWSLETTER</h2>
-          <form action="">
-            Tetur adipiscing elit, sed do eiusmod tempor in cididunt ut labore
-            <input placeholder="Your Email Address" type="text" />
-            <button type="submit">SUBSCRIBE NOW</button>
-          </form>
-        </div> */}
       </div>
 
       <div className={styles.copyright}>
@@ -119,13 +116,22 @@ const Footer = () => {
               Home <i className="fas fa-circle"></i>
             </li>
             <li>
-            <Link href="/#about">About</Link><i className="fas fa-circle"></i>
+              <Link href="/about">About</Link>
+              <i className="fas fa-circle"></i>
             </li>
             <li>
-            <Link href="/#services">Services</Link> <i className="fas fa-circle"></i>
+              <Link href="/services">Services</Link>{" "}
+              <i className="fas fa-circle"></i>
             </li>
             <li>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/process">Process</Link>{" "}
+              <i className="fas fa-circle"></i>
+            </li>
+            <li>
+              <Link href="/fees">Fees</Link> <i className="fas fa-circle"></i>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

@@ -115,8 +115,7 @@
     width: 90%;
     height: auto;
     padding-bottom: 0px;
-    transform: translate(-50%, 30px);
-    top: 0px;
+    transform: translate(-50%, -5%);
   }
   .formGroup {
     width: 100%;

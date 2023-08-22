@@ -1,12 +1,9 @@
 "use client";
-import banner from "../../public/images/backgound23.jpeg";
 import banner2 from "../../public/images/law2.png";
 import headshot from "../../public/images/headshot.png";
-import business from "../../public/images/business.jpg";
 import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";
-import { Fade } from "react-slideshow-image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -34,13 +31,23 @@ const Hero = () => {
           />
         </div>
         <div>
-          <span>Nosrati Law Group</span>
-          <h1>PROFESSIONAL LAW FIRM</h1>
-          <p>
-            Nosrati Law Group, APC is a boutique client-centered practice
-            specializing in estate planning.
-          </p>
-          <button>FREE CONSULTATION</button>
+          <div>
+            <span>Nosrati Law Group</span>
+          </div>
+          <div>
+            <h1>PROFESSIONAL LAW FIRM</h1>
+          </div>
+          <div>
+            <p>
+              Nosrati Law Group, APC is a boutique client-centered practice
+              specializing in estate planning.
+            </p>
+          </div>
+          <div>
+            <Link href="/#contact">
+              <button>FREE CONSULTATION</button>
+            </Link>
+          </div>
         </div>
       </div>
       <div className={styles.overlay}></div>

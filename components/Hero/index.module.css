@@ -24,8 +24,6 @@
   height: 400px;
   flex: 42%;
   position: relative;
-  /* overflow: hidden;
-  border-radius: 15px; */
 }
 .caption > div:nth-child(2) {
   height: 400px;
@@ -97,5 +95,29 @@
   }
   .caption span {
     width: 90%;
+  }
+  .hero {
+    height: 450px;
+    padding: 70px 0;
+  }
+  .caption > div:first-child {
+    height: 250px;
+    flex: 42%;
+    position: relative;
+    display: none;
+  }
+  .caption {
+    flex-flow: column wrap;
+    width: 90%;
+  }
+
+  .caption > div:nth-child(2) {
+    height: fit-content;
+    flex: 100%;
+    margin: 0;
+    padding: 25px 0px;
+  }
+  .caption > div:nth-child(2) > div {
+    margin: 15px 0;
   }
 }

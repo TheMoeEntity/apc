@@ -11,82 +11,7 @@
   padding-bottom: 100px;
   position: relative;
 }
-.test {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  width: 10px;
-  height: 10px;
-}
-.cards {
-  width: 88%;
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  margin-top: -60px;
-  margin-bottom: 120px;
-  z-index: 10;
-  transition: 0.5s;
-  box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2),
-    2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
-}
 
-.cards > div {
-  height: 100%;
-  transition: 0.5s;
-  height: auto;
-  cursor: pointer;
-  flex: 33.333333%;
-  padding: 40px 35px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-.cards > div ul {
-  margin: 20px;
-  font-size: 10px;
-}
-.cards > div ul li {
-  margin: 10px 0;
-}
-
-.cards > div > div {
-  position: relative;
-  margin: 10px 0;
-  font-size: 20px;
-  transition: 1.7s;
-}
-.cards > div > div p {
-  font-size: 16px;
-  line-height: 1.9;
-}
-.cards > div:nth-child(2) {
-  background-color: #b7a189;
-}
-/* .cards:hover {
-    transform: scale(1.03) translateY(-10px);
-  } */
-
-@media (hover: hover) {
-  .cards > div > div:nth-child(1):hover {
-    animation: bounce2 1.2s infinite;
-  }
-}
-@keyframes bounce2 {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 .main {
   width: 88%;
   height: 90%;
@@ -196,31 +121,12 @@
   display: block;
 }
 @media screen and (max-width: 1042px) {
-  .cards {
-    width: 95%;
-  }
 }
 @media screen and (max-width: 922px) {
-  .cards {
-    width: 80%;
-    /* margin-bottom:750px; */
-    box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2),
-      2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
-  }
-  .cards > div {
-    flex: 100%;
-  }
 }
 @media screen and (max-width: 542px) {
-  .cards {
-    margin-top: -80px;
-    width: 95%;
-  }
 }
 @media screen and (max-width: 400px) {
-  .cards {
-    margin-top: -50px;
-  }
 }
 @media screen and (max-width: 1166px) {
   .main {
@@ -245,10 +151,10 @@
 }
 @media screen and (max-width: 665px) {
   .main {
-    width: 85%;
+    width: 100%;
   }
   .main > div:nth-child(1) {
-    height: 450px;
+    height: 400px;
     margin-bottom: 50px;
   }
 
@@ -261,7 +167,7 @@
 }
 @media screen and (max-width: 426px) {
   .main {
-    width: 90%;
+    width: 100%;
   }
   .main > div:nth-child(1) {
     height: 350px;

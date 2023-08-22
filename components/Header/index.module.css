@@ -77,6 +77,9 @@
 .links {
   margin-right: 20px;
 }
+.links.active {
+  color: #b7a189;
+}
 .links > ul > li {
   position: relative;
   height: 110px;
@@ -309,8 +312,9 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.5s;
 }
-.headerTwo > div > ul > li:nth-child(1) {
+.headerTwo > div > ul > li.active {
   color: #b7a189;
 }
 .headerTwo > div > div {

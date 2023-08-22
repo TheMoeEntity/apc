@@ -57,7 +57,7 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-            <h4>&nbsp; &nbsp; &nbsp;STORY NOSRATI LAW GROUP</h4>
+            <h4>&nbsp; &nbsp; &nbsp;STORY ABOUT NOSRATI LAW GROUP</h4>
             <h2>About Us</h2>
             <p>
               Nosrati Law Group, APC is a Beverly Hills based client-centered

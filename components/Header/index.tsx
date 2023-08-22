@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Helpers, linkType } from "../../helpers";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const router = useRouter();
@@ -12,6 +14,7 @@ const Header = () => {
   const sideContent = useRef(null);
   const [sticky, setSticky] = useState("");
   const [hideSticky, setHideSticky] = useState("");
+  const [links, setLinks] = useState<linkType[]>(Helpers.links);
   const headerRef = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -20,6 +23,7 @@ const Header = () => {
       window.removeEventListener("scroll", isSticky);
     };
   }, []);
+  useEffect(() => {}, [router]);
 
   const isSticky = () => {
     const scrollTop = window.scrollY;
@@ -53,6 +57,20 @@ const Header = () => {
       height === "" || height === "0px" ? `${elemHeight}px` : "0";
   };
   const LinkAction = (page: string) => {
+    setLinks((currLink) => {
+      const newLink = currLink.map((x) =>
+        x.href === page
+          ? {
+              ...x,
+              isActive: true,
+            }
+          : {
+              ...x,
+              isActive: false,
+            }
+      );
+      return newLink;
+    });
     router.push(`/${page}`);
   };
 
@@ -138,23 +156,17 @@ const Header = () => {
         </div>
         <div className={styles.links}>
           <ul>
-            <li>
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li onClick={() => LinkAction("about")}>About</li>
-            <li onClick={() => LinkAction("services")}>Services</li>
-            <li onClick={() => LinkAction("process")}>Process</li>
-            <li onClick={() => LinkAction("fees")}>Fees</li>
-            <li onClick={() => LinkAction("testimonials")}>Testimonials</li>
-            <li onClick={() => LinkAction("contact")}>Contact Us</li>
+            {links.map((x, i) => (
+              <li
+                className={x.isActive ? styles.active : ""}
+                key={i}
+                onClick={() => LinkAction(x.href)}
+              >
+                {x.name}
+              </li>
+            ))}
           </ul>
         </div>
-        {/* <div className={styles.search}>
-          <div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div>{`LETS`} TALK</div>
-        </div> */}
         <div onClick={show} className={styles.bars}>
           <i className="fa-solid fa-bars"></i>
         </div>

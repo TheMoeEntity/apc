@@ -99,10 +99,12 @@ const Footer = () => {
             Power of Attorney
           </div>
           <div>
-            <i className="fa fa-angle-right"></i>
+            <span>
+              <i className="fa fa-angle-right"></i>
+            </span>
             <span style={{ fontSize: "15px", textAlign: "center" }}>
-              Medical Health Care Directives & HIPPA release <br />{" "}
-              &nbsp;&nbsp;&nbsp;&nbsp;
+              Medical Health Care Directives & HIPPA &nbsp;&nbsp;&nbsp;&nbsp;
+              release <br />
             </span>
           </div>
         </div>

@@ -46,7 +46,7 @@ const About = () => {
             Sophie takes a personal interest in every {`client's`} story,
             ensuring unique wishes and family dynamics are addressed. As a
             parent, she understands the importance of securing your {`family's`}{" "}
-            legacy. legacy. <br /> <br />
+            legacy. <br /> <br />
             With a commitment to guide you through estate planning, we create
             personalized plans tailored to your {`family's`} needs. From simple
             to substantial estates, {`we're`} here to ensure your {`family's`}{" "}

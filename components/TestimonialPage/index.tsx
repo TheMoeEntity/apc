@@ -1,9 +1,15 @@
 "use client";
-import styles from "./index.module.css";
+import banner from "../../public/images/backgound23.jpeg";
+import banner2 from "../../public/images/law2.png";
+import headshot from "../../public/images/headshot.png";
+import business from "../../public/images/business.jpg";
 import Image from "next/image";
-import man from "../../public/images/business.jpg";
+import styles from "./index.module.css";
+import "react-slideshow-image/dist/styles.css";
+import { Fade } from "react-slideshow-image";
+import Link from "next/link";
 
-const Testimonials = () => {
+const TestimonialPage = () => {
   const testimonials: { text: string; author: string }[] = [
     {
       text: "Sophie is everything my family needed in an estate planning attorney. She is knowledgeable, meticulous, and most importantly a caring person. She takes the time to get to know her clients and thoroughly explains all aspects of the estate plan. I was never embarrassed to ask a question, and she would at every turn make sure my husband and I felt comfortable with the decisions before us. It was a true pleasure to work with her and I feel confident we made the right decision from our first phone conversation.",
@@ -19,82 +25,26 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className={styles.testimonials}>
-      <h2>
-        <span>What Our Clients</span> Say About Our Services
-      </h2>
-      <div className={styles.grid}>
-        <div>
-          <Image
-            src={man}
-            objectFit="cover"
-            alt="testimonial-person"
-            layout="fill"
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <div className={styles.arrow}>
-            <i className="fa-solid fa-caret-left"></i>
-          </div>
-          <div className={styles.quotes}>
-            <i className="fa-solid fa-quote-right"></i>
-          </div>
-          <p>{testimonials[0].text}</p>
-
+    <div className={styles.contact}>
+      <div className={styles.hero}>
+        <div className={styles.caption}>
+          <div className={styles.line}></div>
           <div>
-            <span>{testimonials[0].author}</span>
+            <h2>Testimonials</h2>
           </div>
-        </div>
-        <div>
-          <Image
-            src={man}
-            objectFit="cover"
-            alt="testimonial-person"
-            layout="fill"
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <div className={styles.arrow}>
-            <i className="fa-solid fa-caret-left"></i>
-          </div>
-          <div className={styles.quotes}>
-            <i className="fa-solid fa-quote-right"></i>
-          </div>
-          <p>{testimonials[1].text}</p>
-
           <div>
-            <span>{testimonials[1].author}</span>
+            <p>WHAT OUR CLIENTS THINK</p>
           </div>
-        </div>
-
-        <div>
-          <Image
-            src={man}
-            objectFit="cover"
-            alt="testimonial-person"
-            layout="fill"
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <div className={styles.arrow}>
-            <i className="fa-solid fa-caret-left"></i>
-          </div>
-          <div className={styles.quotes}>
-            <i className="fa-solid fa-quote-right"></i>
-          </div>
-          <p>{testimonials[2].text}</p>
-
-          <div>
-            <span>{testimonials[2].author}</span>
+          <div className={styles.copyrights}>
+            <div>
+              <Link href={`/`}>Home</Link>
+            </div>
+            <div>
+              <i className="fas fa-circle"></i>
+            </div>
+            <div>
+              <Link href={`/contact`}>Testimonials</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -102,4 +52,4 @@ const Testimonials = () => {
   );
 };
 
-export { Testimonials };
+export { TestimonialPage };

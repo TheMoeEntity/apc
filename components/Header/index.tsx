@@ -134,8 +134,10 @@ const Header = () => {
             </li>
             <li onClick={() => LinkAction("about")}>About</li>
             <li onClick={() => LinkAction("services")}>Services</li>
-            <li onClick={() => LinkAction("team")}>Team</li>
-            <li onClick={() => LinkAction("contact")}>Contact</li>
+            <li onClick={() => LinkAction("process")}>Process</li>
+            <li onClick={() => LinkAction("fees")}>Fees</li>
+            <li onClick={() => LinkAction("testimonials")}>Testimonials</li>
+            <li onClick={() => LinkAction("contact")}>Contact Us</li>
           </ul>
         </div>
         {/* <div className={styles.search}>

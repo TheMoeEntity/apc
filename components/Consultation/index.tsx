@@ -87,7 +87,7 @@ const Consultation = () => {
       </div>
       <ParallaxProvider>
         <ParallaxBanner
-          layers={[{ image: "/images/law2.png", speed: -30 }]}
+          layers={[{ image: "/images/law24.png", speed: -30 }]}
           className={`aspect-[2/1] ${styles.banner}`}
         ></ParallaxBanner>
       </ParallaxProvider>

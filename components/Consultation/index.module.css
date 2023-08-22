@@ -1,169 +1,169 @@
 .about {
-    width: 100%;
-    height: auto;
-    position: relative;
-    /* scroll-padding-top: 150px; */
-    scroll-margin-top:120px;
-    
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* scroll-padding-top: 150px; */
+  scroll-margin-top: 120px;
 }
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    top: 0;
-    left: 0;
-    z-index: 10;
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 10; */
 }
 .banner {
-    height: 750px;
-    position: relative;
+  height: 750px;
+  /* position: relative; */
 }
 .consult {
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2), 2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
-    height: 690px;
-    left:50%;
-    top: -7px;
-    transform: translate(-50%,-60px);
-    z-index: 10;
-    background-color: white;
-    width: 60%;
-    padding: 70px 70px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2),
+    2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
+  height: 690px;
+  left: 50%;
+  top: -3px;
+  transform: translate(-50%, -50px);
+  z-index: 10;
+  background-color: white;
+  width: 60%;
+  padding: 70px 70px;
 }
 .title {
-    margin:auto;
-    width: 80%;
+  margin: auto;
+  width: 80%;
 }
 .consult h2 {
-    color: #4D4D4D;
-    text-align: center;
-    font-size: 30px;
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 30px;
 }
 .title > span {
-    color: #A0A0A0;
-    text-align: center;
-    margin: 15px 0;
-    display: block;
-    line-height: 1.7;
-    font-size: 18px;
-  
+  color: #a0a0a0;
+  text-align: center;
+  margin: 15px 0;
+  display: block;
+  line-height: 1.7;
+  font-size: 18px;
 }
 .consult form {
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    padding-bottom: 70px;
-    position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding-bottom: 70px;
+  position: relative;
 }
 .formGroup {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.formGroup input {
+  width: 48%;
+  height: 60px;
+  padding: 10px 20px;
+  color: black;
+  background-color: #f5f5f5;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #8a8a8a;
+  font-weight: 200;
+}
+.consult form textarea {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  height: 130px;
+  margin-bottom: 20px;
+  color: black;
+}
+.consult form button {
+  width: 100%;
+  height: 55px;
+  color: white;
+  background-color: #6b6b6b;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 900px) {
+  .consult {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .consult {
+    width: 90%;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .consult {
+    width: 90%;
+    height: auto;
+    padding-bottom: 0px;
+    transform: translate(-50%, 30px);
+    top: 0px;
+  }
+  .formGroup {
     width: 100%;
     height: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
-    margin: 20px 0;
-}
-.formGroup input {
-    width: 48%;
-    height: 60px;
-    padding: 10px 20px;
-    color:black;
-    background-color: #F5F5F5;
-    outline: none;
-    border: none;
-    font-size: 18px;
-}
-.formGroup input::placeholder, .formGroup textarea::placeholder {
-    color: #8A8A8A;
-    font-weight: 200;
-}
-.consult form textarea {
+    margin: 5px 0;
+  }
+  .formGroup input {
     width: 100%;
-    height: auto;
-    background-color: #F5F5F5;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    height: 130px;
-    margin-bottom: 20px;
-    color: black;
+    margin: 10px 0;
+  }
+  .banner {
+    height: 1050px;
+  }
+  .consult {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .consult h2 {
+    font-size: 25px;
+  }
 }
-.consult form button {
-    width: 100%;
-    height: 55px;
-    color: white;
-    background-color: #6B6B6B;
-    border: none;
-    outline: none;
-}
-@media screen and (max-width:900px)  {
-    .consult {
-        width: 85%;
-    }
-}
-@media screen and (max-width:600px)  {
-    .consult {
-        width: 90%;
-        height: 700px;
-    }
-}
-@media screen and (max-width:525px)  {
-    .consult {
-        width: 90%;
-        height: auto;
-        padding-bottom: 0px;
-        transform: translate(-50%,30px);
-        top: 0px;
-    }
-    .formGroup {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        margin: 5px 0;
-    }
-    .formGroup input {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .banner {
-        height: 1050px;
-    }
-    .consult {
-       padding-top: 40px;
-       padding-left: 10px;
-       padding-right: 10px;
-    }
-    .consult h2 {
-        font-size: 25px;
-    }
-}
-@media screen and (max-width:525px) {
-    .banner {
-        height: 870px;
-    }
-    .consult {
-        padding-top: 40px;
-       padding-left: 17px;
-       padding-right: 17px;
-    }
-    .title {
-        width: 90%;
-    }
-    .consult h2 {
-        font-size: 28px;
-    }
-    .title span {
-        font-size: 15px;
-    }
-    .overlay {
-        background-color: #EEEEEE;
-    }
-    .consult form {
-        margin-top: 30px;
-    }
+@media screen and (max-width: 525px) {
+  .banner {
+    height: 870px;
+  }
+  .consult {
+    padding-top: 40px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .title {
+    width: 90%;
+  }
+  .consult h2 {
+    font-size: 28px;
+  }
+  .title span {
+    font-size: 15px;
+  }
+  .overlay {
+    background-color: #eeeeee;
+  }
+  .consult form {
+    margin-top: 30px;
+  }
 }

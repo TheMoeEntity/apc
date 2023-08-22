@@ -15,11 +15,7 @@ const Contact = () => {
             <h2>Contact Us</h2>
           </div>
           <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-              porro quisquam repudiandae explicabo aliquid quod odit aperiam
-              saepe eligendi quos.
-            </p>
+            <p>REACH OUT TO US</p>
           </div>
           <div className={styles.copyrights}>
             <div>

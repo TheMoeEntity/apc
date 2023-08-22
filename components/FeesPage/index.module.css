@@ -1,0 +1,120 @@
+.contact {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  width: 100%;
+  height: 350px;
+  background-image: url("/images/backgound23.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caption {
+  width: 80%;
+  height: 85%;
+  max-width: 550px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  margin-top: 30px;
+}
+.copyrights {
+  background: rgba(255, 255, 255, 0.1);
+  width: fit-content;
+  padding: 0 50px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+.copyrights > div {
+  margin-left: 12px;
+}
+.copyrights > div:first-child {
+  color: #0a1849;
+}
+.copyrights i {
+  font-size: 9px;
+  color: #0a1849;
+  display: block;
+}
+.caption h2 {
+  margin: 0;
+  font-size: 40px;
+}
+.caption > div {
+  margin: 8px 0;
+}
+.line {
+  width: 65px;
+  height: 6px;
+  display: block;
+  background-color: #0a1849;
+}
+.content {
+  width: 100%;
+  padding: 80px 30px;
+  color: #555555;
+}
+.content > h2 {
+  font-size: 35px;
+  margin: 20px 0;
+  color: black;
+}
+.content p {
+  font-size: 16px;
+  padding-right: 50px;
+}
+.cards {
+  margin: 70px auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.cards > div {
+  height: 200px;
+  flex: 30%;
+  max-width: 350px;
+  margin: 10px 10px;
+  background-color: #3e3e3e;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.cards > div > div {
+  margin: 12px 0;
+}
+.packages {
+  color: #b2986b;
+  font-weight: bold;
+}
+.content h3 {
+  text-align: center;
+  margin-top: 40px;
+}
+.cards > div > div p {
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+  color: lightgray;
+}
+.cards > div > div i {
+  font-size: 40px;
+}
+.icons {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}

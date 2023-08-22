@@ -11,83 +11,39 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="slide-container">
-      <Fade
-        arrows={true}
-        infinite={true}
-        duration={7000}
-        transitionDuration={400}
-        indicators={true}
-      >
-        <div className={styles.hero}>
+    <div className={styles.hero}>
+      <Image
+        alt="Banner-img"
+        objectFit="cover"
+        src={banner2}
+        layout="fill"
+        quality={100}
+        priority={true}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+      <div className={styles.caption}>
+        <div>
           <Image
             alt="Banner-img"
             objectFit="cover"
-            src={banner2}
+            src={headshot}
             layout="fill"
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className={styles.caption}>
-            <div>
-              <Image
-                alt="Banner-img"
-                objectFit="cover"
-                src={headshot}
-                layout="fill"
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div>
-              <span>Nosrati Law Group</span>
-              <h1>PROFESSIONAL LAW FIRM</h1>
-              <p>
-                Nosrati Law Group, APC is a boutique client-centered practice
-                specializing in estate planning.
-              </p>
-              <button>FREE CONSULTATION</button>
-            </div>
-          </div>
-          <div className={styles.overlay}></div>
         </div>
-        <div className={styles.hero}>
-          <Image
-            alt="Banner-img"
-            objectFit="cover"
-            src={banner}
-            layout="fill"
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-          <div className={styles.caption}>
-            <div>
-              <Image
-                alt="Banner-img"
-                objectFit="cover"
-                src={business}
-                layout="fill"
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div>
-              <span>Nosrati Law Group</span>
-              <h1>Nosrati Law Group, APC</h1>
-              <p>
-                We are a leading law firm in estate planning. With more than 20
-                years of experience
-              </p>
-              <button>FREE CONSULTATION</button>
-            </div>
-          </div>
-          <div className={styles.overlay}></div>
+        <div>
+          <span>Nosrati Law Group</span>
+          <h1>PROFESSIONAL LAW FIRM</h1>
+          <p>
+            Nosrati Law Group, APC is a boutique client-centered practice
+            specializing in estate planning.
+          </p>
+          <button>FREE CONSULTATION</button>
         </div>
-      </Fade>
+      </div>
+      <div className={styles.overlay}></div>
     </div>
   );
 };

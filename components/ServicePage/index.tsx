@@ -49,11 +49,7 @@ const ServicePage = () => {
             <h2> Services</h2>
           </div>
           <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-              porro quisquam repudiandae explicabo aliquid quod odit aperiam
-              saepe eligendi quos.
-            </p>
+            <p>OUR SERVICES AND LEGAL PRACTICE AREA</p>
           </div>
           <div className={styles.copyrights}>
             <div>
@@ -63,7 +59,7 @@ const ServicePage = () => {
               <i className="fas fa-circle"></i>
             </div>
             <div>
-              <Link href={`/contact`}>Contact</Link>
+              <Link href={`/contact`}>Services</Link>
             </div>
           </div>
         </div>
@@ -100,7 +96,7 @@ const ServicePage = () => {
                     Of significant importance, if you have minor children, your
                     estate plan helps you designate a trusted guardian for your
                     children until they are adults. <br /> <br />
-                    <b>WHO NEEDS A CUSTOMIZED ESTATE PLAN?</b> <br />
+                    <b>WHO NEEDS A CUSTOMIZED ESTATE PLAN?</b> <br /> <br />
                     Anyone who has minor children, owns real estate, or owns a
                     business, or has assets over $150,000 should have a
                     comprehensive estate plan. If you don’t have an estate plan,

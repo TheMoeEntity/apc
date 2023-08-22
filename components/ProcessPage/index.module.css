@@ -245,6 +245,11 @@
     width: 100%;
     margin-right: 0;
   }
+  .hero {
+    height: 420px;
+    background-position: left;
+    background-attachment: scroll;
+  }
 }
 @media screen and (max-width: 426px) {
   .main {

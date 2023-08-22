@@ -118,3 +118,10 @@
   height: 60px;
   position: relative;
 }
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 420px;
+    background-position: left;
+    background-attachment: scroll;
+  }
+}

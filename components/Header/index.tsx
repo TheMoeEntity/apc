@@ -85,6 +85,9 @@ const Header = () => {
               <Link href={"/fees"}>Fees</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
+              <Link href={"/testimonials"}>Testimonials</Link>
+            </li>
+            <li onClick={() => setSideBar(false)}>
               <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>

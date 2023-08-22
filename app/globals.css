@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -80,6 +80,8 @@
 }
 button {
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 html,
 body {
@@ -101,7 +103,6 @@ a {
 html {
   scroll-behavior: smooth !important;
   scroll-padding-top: 120px;
-  
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -110,7 +111,6 @@ html {
     scroll-padding-top: 160px;
   }
 }
-
 
 #notfound {
   position: relative;
@@ -122,8 +122,8 @@ html {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .notfound {
@@ -144,7 +144,7 @@ html {
 } */
 
 .notfound .notfound-404 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 236px;
   font-weight: 200;
   margin: 0px;
@@ -154,16 +154,16 @@ html {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .notfound .notfound-404 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #0A1849;
+  color: #0a1849;
   background: #fff;
   padding: 10px 5px;
   margin: auto;
@@ -175,14 +175,14 @@ html {
 }
 
 .notfound a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   padding: 13px 23px;
-  background: #0A1849;
+  background: #0a1849;
   font-size: 18px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -190,7 +190,7 @@ html {
 
 .notfound a:hover {
   color: white;
-  background: #0A1849;
+  background: #0a1849;
 }
 
 @media only screen and (max-width: 767px) {

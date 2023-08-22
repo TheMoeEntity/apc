@@ -129,8 +129,9 @@
     width: 100%;
   }
   .cards > div {
-    height: 200px;
+    height: auto;
     flex: 100%;
+    padding: 40px 0;
     max-width: 350px;
     margin: 20px 0px;
   }

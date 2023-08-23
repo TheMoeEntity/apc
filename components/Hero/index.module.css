@@ -20,7 +20,8 @@
   font-weight: 300;
 }
 .caption > div:first-child {
-  height: 400px;
+  height: calc(0.36 * 1170px);
+  width: calc(0.36 * 1038px);
   flex: 42%;
   position: relative;
 }

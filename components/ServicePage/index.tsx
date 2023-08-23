@@ -1,46 +1,9 @@
 "use client";
 import Link from "next/link";
+import { Helpers } from "../../helpers";
 import styles from "./index.module.css";
-import Image from "next/image";
-import { MouseEvent, useRef } from "react";
 
 const ServicePage = () => {
-  const container = useRef(null);
-  const img = useRef(null);
-  const accordion = (e: MouseEvent<HTMLDivElement>) => {
-    const event = e.target as HTMLElement;
-    const height = (
-      (e.target as HTMLElement).nextSibling.nextSibling as HTMLElement
-    ).style.maxHeight;
-    const elemHeight =
-      ((e.target as HTMLElement).nextSibling.nextSibling as HTMLElement)
-        .scrollHeight + 80;
-    const children = container.current.children;
-
-    // for (const child of children) {
-    //   child.children[2].style.maxHeight = "0";
-    //   child.children[2].style.padding = "0 40px";
-    //   child.children[2].style.maxHeight = "0";
-    //   child.children[0].style.background = "#0A1849";
-    //   child.children[0].style.color = "white";
-    //   child.children[1].style.background = "transparent";
-    // }
-
-    event.style.background =
-      height === "1300px" || height === "0px" ? "#B7A189" : "#0A1849";
-    event.style.color =
-      height === "1300px" || height === "0px" ? "black" : "white";
-    event.children[0].children[0].className =
-      height === "1300px" || height === "0px" ? "fas fa-minus" : "fas fa-plus";
-    (event.children[0] as HTMLElement).style.color =
-      height === "1300px" || height === "0px" ? "black" : "#b7a189";
-    (event.nextSibling.nextSibling as HTMLElement).style.padding =
-      height === "1300px" || height === "0px" ? "40px 40px" : "0 40px";
-    (event.nextSibling as HTMLElement).style.background =
-      height === "1300px" || height === "0px" ? "#F1F1F1" : "transparent";
-    (event.nextSibling.nextSibling as HTMLElement).style.maxHeight =
-      height === "1300px" || height === "0px" ? `${elemHeight}px` : "0";
-  };
   return (
     <div className={styles.contact}>
       <div className={styles.hero}>
@@ -69,9 +32,9 @@ const ServicePage = () => {
         <div className={styles.grid}>
           <div>
             <h2>What We Are Expert At</h2>
-            <div ref={container} className={styles.accordion}>
+            <div className={styles.accordion}>
               <div className={styles.first}>
-                <div onClick={(e) => accordion(e)}>
+                <div onClick={(e) => Helpers.accordionEffect(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>
@@ -109,7 +72,7 @@ const ServicePage = () => {
                 </div>
               </div>
               <div className={styles.first}>
-                <div onClick={(e) => accordion(e)}>
+                <div onClick={(e) => Helpers.accordionEffect(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
@@ -134,7 +97,7 @@ const ServicePage = () => {
                 </div>
               </div>
               <div className={styles.first}>
-                <div onClick={(e) => accordion(e)}>
+                <div onClick={(e) => Helpers.accordionEffect(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
@@ -192,9 +155,9 @@ const ServicePage = () => {
           </div>
           <div>
             <h2>Legal Practices Area</h2>
-            <div ref={container} className={styles.accordion}>
+            <div className={styles.accordion}>
               <div className={styles.first}>
-                <div onClick={(e) => accordion(e)}>
+                <div onClick={(e) => Helpers.accordionEffect(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}
@@ -211,7 +174,7 @@ const ServicePage = () => {
                 </div>
               </div>
               <div className={styles.first}>
-                <div onClick={(e) => accordion(e)}>
+                <div onClick={(e) => Helpers.accordionEffect(e)}>
                   <span>
                     <i className="fas fa-plus"></i>
                   </span>{" "}

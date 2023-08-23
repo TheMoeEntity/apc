@@ -16,7 +16,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   });
   let mailData = {
     from: "Mrs Nosrati Law Group",
-    to: "sykik09@gmail.com",
+    to: "mosesnwigberi@gmail.com",
     subject: `You have a message from ${firstName} in the NLG website`,
     text: message + "| Sent from: " + email,
     html: `<div>
@@ -28,7 +28,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   };
 
   await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, function (err, info) {
+    transporter.sendMail(mailData, function (err: string, info: unknown) {
       if (err) {
         console.log("This is the error" + err);
         reject("This is the error" + err);

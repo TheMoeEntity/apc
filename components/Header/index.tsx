@@ -5,74 +5,15 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Helpers, linkType } from "../../helpers";
-import { usePathname } from "next/navigation";
+import { useLinks, useSideBar, useSticky } from "../../helpers/hooks";
 
 const Header = () => {
   const router = useRouter();
-  const [sidebar, setSideBar] = useState(false);
   const sideContent = useRef(null);
+  const { sidebar, setSideBar, hide, show } = useSideBar(sideContent);
   const [sticky, setSticky] = useState("");
-  const [hideSticky, setHideSticky] = useState("");
-  const [links, setLinks] = useState<linkType[]>(Helpers.links);
-  const headerRef = useRef(null);
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  }, []);
-  useEffect(() => {}, [router]);
-
-  const isSticky = () => {
-    const scrollTop = window.scrollY;
-    let number = headerRef.current.style.display === "" ? 120 : 175;
-    const stickyClass = scrollTop >= number ? styles.isSticky : "";
-    setSticky(stickyClass);
-  };
-
-  const show = () => {
-    setSideBar(true);
-    setTimeout(() => {
-      sideContent.current.style.width = "70%";
-      sideContent.current.style.visibility = "visible";
-    }, 700);
-  };
-
-  const hide = () => {
-    setSideBar(false);
-    setTimeout(() => {
-      sideContent.current.style.width = "0%";
-      sideContent.current.style.visibility = "hidden";
-    }, 400);
-  };
-
-  const more = useRef(null);
-  const inner = useRef(null);
-  const showMore = () => {
-    const elemHeight = more.current.scrollHeight;
-    const height = more.current.style.maxHeight;
-    more.current.style.maxHeight =
-      height === "" || height === "0px" ? `${elemHeight}px` : "0";
-  };
-  const LinkAction = (page: string) => {
-    setLinks((currLink) => {
-      const newLink = currLink.map((x) =>
-        x.href === page
-          ? {
-              ...x,
-              isActive: true,
-            }
-          : {
-              ...x,
-              isActive: false,
-            }
-      );
-      return newLink;
-    });
-    router.push(`/${page}`);
-  };
+  const { links, LinkAction } = useLinks();
+  const headerRef = useSticky(styles.isSticky, setSticky);
 
   return (
     <div className={styles.header}>
@@ -140,8 +81,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.headerTwo} ${sticky} ${hideSticky}`}>
+      <div className={`${styles.headerTwo} ${sticky}`}>
         <div>
+          x
           <Link href={`/`}>
             <Image
               src={logo}

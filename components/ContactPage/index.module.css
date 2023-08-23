@@ -69,17 +69,21 @@
 }
 .maps > div {
   width: 33.333333%;
-  height: 480px;
+  /* height: 480px; */
 }
 
 .maps > div:last-child {
-  background-image: url("/images/business.jpg");
+  background-image: url("/images/family.jpg");
   background-position: right;
   background-size: cover;
+  height: 480px;
 }
 .maps > div:nth-child(2) {
   background-color: #010d14;
-  padding: 30px 30px;
+  padding: 40px 30px;
+  min-height: 570px;
+  max-height: auto;
+  margin-top: -30px;
 }
 .maps > div:nth-child(2) form {
   width: 100%;
@@ -114,29 +118,34 @@
   color: white;
   font-size: 35px;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 30px;
   text-align: center;
   margin-bottom: 10px;
 }
 .maps > div:nth-child(2) form textarea {
   width: 100%;
-  height: 120px;
+  min-height: 100px;
+  max-height: auto;
   outline: none;
   border: none;
+  resize: none;
   margin-top: -20px;
   padding: 20px 0px;
   background-color: transparent;
   color: white;
+  font-size: 16px;
   border-bottom: 1px solid rgba(203, 203, 203, 0.3);
 }
 .maps > div:nth-child(2) form textarea::placeholder {
   color: white;
+  font-size: 16px;
+  font-weight: 200;
 }
 .btn {
   background-color: #ffb703;
   color: #010d14;
   padding: 15px 30px;
-  margin-top: 10px;
+  margin-top: 30px;
   font-weight: bolder;
   display: block;
 }
@@ -182,6 +191,7 @@
   }
   .maps > div:nth-child(2) {
     padding: 70px 40px;
+    height: auto;
   }
   .maps > div:nth-child(2) form h1 {
     margin-top: 30px;

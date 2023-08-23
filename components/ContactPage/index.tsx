@@ -1,11 +1,14 @@
+"use client";
 import Link from "next/link";
 import styles from "./index.module.css";
 import icon1 from "../../public/images/1.png";
 import icon2 from "../../public/images/2.png";
 import icon3 from "../../public/images/3.png";
 import Image from "next/image";
+import { useResize } from "../../helpers/hooks";
 
 const Contact = () => {
+  const { val, setVal, textAreaRef } = useResize();
   return (
     <div className={styles.contact}>
       <div className={styles.hero}>
@@ -56,15 +59,17 @@ const Contact = () => {
               <input placeholder="Email" type="text" />
             </div>
             <div className={styles.formGroup}>
-              <input placeholder="Phone Number" type="text" />
-              <input placeholder="Your Website" type="text" />
+              <input placeholder="Phone Number" type="number" />
+              <input placeholder="Your Address" type="text" />
             </div>
             <textarea
               placeholder="Your Message Here"
               name=""
               id=""
-              cols={30}
-              rows={30}
+              cols={10}
+              ref={textAreaRef}
+              value={val}
+              onChange={(e) => setVal(e.target.value)}
             ></textarea>
             <button className={styles.btn} type="submit">
               SUBMIT NOW

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/business.jpg";
+import man from "../../public/images/family2.jpg";
 import shape from "../../public/images/shape-1.png";
 
 const ProcessPage = () => {

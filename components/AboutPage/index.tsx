@@ -2,7 +2,8 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
-import firm from "../../public/images/lawfirm.webp";
+import family from "../../public/images/family.jpg";
+import family2 from "../../public/images/family2.jpg";
 import shape from "../../public/images/shape-1.png";
 
 const AboutPage = () => {
@@ -34,12 +35,12 @@ const AboutPage = () => {
         <div className={styles.main}>
           <div className={styles.man}>
             <Image
-              src={firm}
+              src={family}
               alt="card-image"
               fill={true}
               quality={100}
               priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 2917px) 100vw, (max-width: 2917px) 50vw, 33vw"
             />
           </div>
           <div className={styles.stuff}>
@@ -83,11 +84,21 @@ const AboutPage = () => {
         </div>
         <div className={styles.aboutSophie}>
           <div>
-            <h3>S. SOPHIE NOSRATI</h3>
-            <div></div>
+            <div className={styles.family}>
+              <Image
+                src={family2}
+                alt="card-image"
+                fill={true}
+                quality={100}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
           </div>
 
           <div>
+            <h3>S. SOPHIE NOSRATI</h3>
+            <div className={styles.blob}></div>
             <p>
               As the managing member of Nosrati Law Group, I pride myself in
               taking a personal interest in every client’s family dynamic and
@@ -121,7 +132,7 @@ const AboutPage = () => {
         <div className={styles.aboutSophie}>
           <div>
             <h3>EDUCATION & ADMISSIONS</h3>
-            <div></div>
+            <div className={styles.blob}></div>
           </div>
 
           <div>

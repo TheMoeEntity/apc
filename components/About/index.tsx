@@ -1,10 +1,9 @@
 "use client";
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/column-bg2.png";
+import man from "../../public/images/family2.jpg";
 import shape from "../../public/images/shape-1.png";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const About = () => {

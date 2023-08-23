@@ -39,7 +39,7 @@
   height: 13px;
 }
 .main > div:nth-child(1) {
-  height: 450px;
+  height: 390px;
   transition: 0.88s;
   width: 45%;
 }
@@ -200,18 +200,25 @@
   line-height: 1.6;
 }
 .aboutSophie > div:nth-child(1) {
-  flex: 30%;
+  flex: 40%;
   margin-right: 20px;
 }
-.aboutSophie > div:nth-child(1) > div {
+.blob {
   width: 30px;
   height: 10px;
   border-radius: 7px;
   background-color: #b2986b;
   margin-top: 10px;
+  margin-bottom: 40px;
+}
+.family {
+  width: 95%;
+  height: 390px;
+  position: relative;
+  margin-bottom: 40px;
 }
 .aboutSophie > div:nth-child(2) {
-  flex: 60%;
+  flex: 50%;
 }
 @media screen and (max-width: 1042px) {
 }
@@ -274,8 +281,12 @@
     width: 90%;
   }
   .main > div:nth-child(1) {
-    height: 350px;
+    height: 250px;
     margin-bottom: 50px;
+  }
+  .family {
+    width: 100%;
+    height: 250px;
   }
   .about {
     background-position: center;

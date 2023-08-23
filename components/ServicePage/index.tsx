@@ -17,28 +17,29 @@ const ServicePage = () => {
         .scrollHeight + 80;
     const children = container.current.children;
 
-    for (const child of children) {
-      child.children[2].style.maxHeight = "0";
-      child.children[2].style.padding = "0 40px";
-      child.children[2].style.maxHeight = "0";
-      child.children[0].style.background = "#0A1849";
-      child.children[0].style.color = "white";
-      child.children[1].style.background = "transparent";
-    }
+    // for (const child of children) {
+    //   child.children[2].style.maxHeight = "0";
+    //   child.children[2].style.padding = "0 40px";
+    //   child.children[2].style.maxHeight = "0";
+    //   child.children[0].style.background = "#0A1849";
+    //   child.children[0].style.color = "white";
+    //   child.children[1].style.background = "transparent";
+    // }
 
     event.style.background =
-      height === "" || height === "0px" ? "#B7A189" : "#0A1849";
-    event.style.color = height === "" || height === "0px" ? "black" : "white";
+      height === "1300px" || height === "0px" ? "#B7A189" : "#0A1849";
+    event.style.color =
+      height === "1300px" || height === "0px" ? "black" : "white";
     event.children[0].children[0].className =
-      height === "" || height === "0px" ? "fas fa-minus" : "fas fa-plus";
+      height === "1300px" || height === "0px" ? "fas fa-minus" : "fas fa-plus";
     (event.children[0] as HTMLElement).style.color =
-      height === "" || height === "0px" ? "black" : "#b7a189";
+      height === "1300px" || height === "0px" ? "black" : "#b7a189";
     (event.nextSibling.nextSibling as HTMLElement).style.padding =
-      height === "" || height === "0px" ? "5px 40px" : "0 40px";
+      height === "1300px" || height === "0px" ? "40px 40px" : "0 40px";
     (event.nextSibling as HTMLElement).style.background =
-      height === "" || height === "0px" ? "#F1F1F1" : "transparent";
+      height === "1300px" || height === "0px" ? "#F1F1F1" : "transparent";
     (event.nextSibling.nextSibling as HTMLElement).style.maxHeight =
-      height === "" || height === "0px" ? `${elemHeight}px` : "0";
+      height === "1300px" || height === "0px" ? `${elemHeight}px` : "0";
   };
   return (
     <div className={styles.contact}>
@@ -78,7 +79,7 @@ const ServicePage = () => {
                   <span>Comprehensive Estate Planning</span>
                 </div>
                 <div></div>
-                <div style={{ fontSize: "12px" }}>
+                <div>
                   <p>
                     A well-drafted and complete estate plan will ensure that
                     your family and assets are protected should something happen
@@ -115,7 +116,7 @@ const ServicePage = () => {
                   &nbsp;&nbsp;&nbsp; Wills
                 </div>
                 <div></div>
-                <div style={{ fontSize: "12.5px" }}>
+                <div>
                   <p>
                     Drafting a valid will is simple, cost effective and has only
                     a few requirements. However, most Wills need to be probated.
@@ -140,7 +141,7 @@ const ServicePage = () => {
                   &nbsp;&nbsp;&nbsp; Trust
                 </div>
                 <div></div>
-                <div style={{ fontSize: "12.5px" }}>
+                <div>
                   <p>
                     A trust is a document that allows a third party, your
                     trustee, selected by you to make decision with respect to
@@ -200,7 +201,7 @@ const ServicePage = () => {
                   &nbsp;&nbsp;&nbsp; Power Of Attorney
                 </div>
                 <div></div>
-                <div style={{ fontSize: "12px" }}>
+                <div>
                   <p>
                     A Power of Attorney allows an entrusted agent selected by
                     you to act on your behalf in the event of your incapacity
@@ -218,7 +219,7 @@ const ServicePage = () => {
                   <span>Medical Health Care Direcives & HIPPA Release</span>
                 </div>
                 <div></div>
-                <div style={{ fontSize: "12.5px" }}>
+                <div>
                   <p>
                     A Medical Health Care Directive allows an entrusted agent
                     selected by you to make important health care decisions on

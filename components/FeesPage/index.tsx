@@ -5,34 +5,18 @@ import icon3 from "../../public/images/3.png";
 import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";
-import { Fade } from "react-slideshow-image";
-import Link from "next/link";
+import { useHero } from "../../helpers/hooks/useHero";
 
 const FeesPage = () => {
   return (
     <div className={styles.contact}>
-      <div className={styles.hero}>
-        <div className={styles.caption}>
-          <div className={styles.line}></div>
-          <div>
-            <h2>Fees</h2>
-          </div>
-          <div>
-            <p>OUR FEES AND PRACTICE AREAS</p>
-          </div>
-          <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>Fees</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {useHero(
+        "OUR FEES AND PRACTICE AREAS",
+        "Fees",
+        styles.hero,
+        styles.caption,
+        styles.line
+      )}
       <div className={styles.content}>
         <h2>FEES & PRACTICE AREAS</h2>
         <p>

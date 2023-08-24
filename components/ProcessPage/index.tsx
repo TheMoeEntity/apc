@@ -4,32 +4,18 @@ import styles from "./index.module.css";
 import Image from "next/image";
 import man from "../../public/images/family2.jpg";
 import shape from "../../public/images/shape-1.png";
+import { useHero } from "../../helpers/hooks/useHero";
 
 const ProcessPage = () => {
   return (
     <div className={styles.contact}>
-      <div className={styles.hero}>
-        <div className={styles.caption}>
-          <div className={styles.line}></div>
-          <div>
-            <h2>Process</h2>
-          </div>
-          <div>
-            <p>THE ESTATE PLANNING PROCESS</p>
-          </div>
-          <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>Process</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {useHero(
+        "THE ESTATE PLANNING PROCESS",
+        "Process",
+        styles.hero,
+        styles.caption,
+        styles.line
+      )}
       <div className={styles.about}>
         <div className={styles.main}>
           <div className={styles.man}>
@@ -39,7 +25,7 @@ const ProcessPage = () => {
               fill={true}
               quality={100}
               priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 2901px) 100vw, (max-width: 2901px) 50vw, 33vw"
             />
           </div>
           <div className={styles.stuff}>

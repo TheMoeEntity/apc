@@ -56,6 +56,7 @@ export class Helpers {
       href: "contact",
     },
   ];
+
   static accordionEffect = (
     e: MouseEvent<HTMLDivElement>,
     container?: MutableRefObject<HTMLDivElement>

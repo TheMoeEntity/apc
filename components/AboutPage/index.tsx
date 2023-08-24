@@ -1,36 +1,20 @@
 "use client";
-import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
 import family from "../../public/images/family.jpg";
-import family2 from "../../public/images/family2.jpg";
 import shape from "../../public/images/shape-1.png";
+import { useHero } from "../../helpers/hooks/useHero";
 
 const AboutPage = () => {
   return (
     <div className={styles.contact}>
-      <div className={styles.hero}>
-        <div className={styles.caption}>
-          <div className={styles.line}></div>
-          <div>
-            <h2>About Us</h2>
-          </div>
-          <div>
-            <p>STORY ABOUT NOSRATI GROUP</p>
-          </div>
-          <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>About</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {useHero(
+        "STORY ABOUT NOSRATI GROUP",
+        "About Us",
+        styles.hero,
+        styles.caption,
+        styles.line
+      )}
       <div className={styles.about}>
         <div className={styles.main}>
           <div className={styles.man}>
@@ -124,7 +108,7 @@ const AboutPage = () => {
             <div className={styles.blob}></div>
           </div>
 
-          <div style={{ flex: "53%" }}>
+          <div className={styles.educationText} style={{ flex: "53%" }}>
             <p>
               S. Sophie Nosrati received her Bachelor’s Degree from the
               University of California, Los Angeles (Cum Laude), and her Juris

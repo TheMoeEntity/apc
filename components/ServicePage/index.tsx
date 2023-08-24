@@ -1,33 +1,19 @@
 "use client";
 import Link from "next/link";
 import { Helpers } from "../../helpers";
+import { useHero } from "../../helpers/hooks/useHero";
 import styles from "./index.module.css";
 
 const ServicePage = () => {
   return (
     <div className={styles.contact}>
-      <div className={styles.hero}>
-        <div className={styles.caption}>
-          <div className={styles.line}></div>
-          <div>
-            <h2> Services</h2>
-          </div>
-          <div>
-            <p>OUR SERVICES AND LEGAL PRACTICE AREA</p>
-          </div>
-          <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>Services</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {useHero(
+        "OUR SERVICES AND LEGAL PRACTICE AREA",
+        "Services",
+        styles.hero,
+        styles.caption,
+        styles.line
+      )}
       <div className={styles.content}>
         <div className={styles.grid}>
           <div>

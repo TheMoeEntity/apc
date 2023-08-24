@@ -6,33 +6,19 @@ import icon2 from "../../public/images/2.png";
 import icon3 from "../../public/images/3.png";
 import Image from "next/image";
 import { useResize } from "../../helpers/hooks";
+import { useHero } from "../../helpers/hooks/useHero";
 
 const Contact = () => {
   const { val, setVal, textAreaRef } = useResize();
   return (
     <div className={styles.contact}>
-      <div className={styles.hero}>
-        <div className={styles.caption}>
-          <div className={styles.line}></div>
-          <div>
-            <h2>Contact Us</h2>
-          </div>
-          <div>
-            <p>REACH OUT TO US</p>
-          </div>
-          <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>Contact</Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {useHero(
+        "REACH OUT TO US",
+        "Contact Us",
+        styles.hero,
+        styles.caption,
+        styles.line
+      )}
       <div className={styles.maps}>
         <div>
           <div className="google-map-code">

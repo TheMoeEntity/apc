@@ -40,9 +40,12 @@
   height: 13px;
 }
 .main > div:nth-child(1) {
-  height: 400px;
+  /* height: 400px;
   transition: 0.88s;
-  width: 40%;
+  width: 40%; */
+  height: calc(0.15 * 2901px);
+  transition: 0.88s;
+  width: calc(0.15 * 2919px);
 }
 .main > div:nth-child(1) > img {
   border-radius: 20px;
@@ -264,6 +267,9 @@
   .main > div:nth-child(1) {
     height: 290px;
     margin-bottom: 50px;
+    height: calc(0.12 * 2901px);
+    transition: 0.88s;
+    width: 100%;
   }
   .about {
     background-position: center;

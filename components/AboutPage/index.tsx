@@ -84,21 +84,6 @@ const AboutPage = () => {
         </div>
         <div className={styles.aboutSophie}>
           <div>
-            <div className={styles.family}>
-              <Image
-                src={family2}
-                alt="card-image"
-                fill={true}
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </div>
-
-          <div>
-            <h3>S. SOPHIE NOSRATI</h3>
-            <div className={styles.blob}></div>
             <p>
               As the managing member of Nosrati Law Group, I pride myself in
               taking a personal interest in every client’s family dynamic and
@@ -127,15 +112,19 @@ const AboutPage = () => {
               preserving your legacy.
             </p>
           </div>
+          <div>
+            <h3>S. SOPHIE NOSRATI</h3>
+            <div className={styles.blob}></div>
+          </div>
         </div>
 
         <div className={styles.aboutSophie}>
-          <div>
+          <div className={styles.education}>
             <h3>EDUCATION & ADMISSIONS</h3>
             <div className={styles.blob}></div>
           </div>
 
-          <div>
+          <div style={{ flex: "53%" }}>
             <p>
               S. Sophie Nosrati received her Bachelor’s Degree from the
               University of California, Los Angeles (Cum Laude), and her Juris

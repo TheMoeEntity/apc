@@ -20,14 +20,14 @@
   font-weight: 300;
 }
 .caption > div:first-child {
-  height: calc(0.36 * 1170px);
-  width: calc(0.36 * 1038px);
-  flex: 42%;
+  height: calc(0.47 * 1038px);
+  width: calc(0.47 * 1847px);
+  flex: 40%;
   position: relative;
 }
 .caption > div:nth-child(2) {
   height: 400px;
-  flex: 58%;
+  flex: 60%;
   position: relative;
   padding: 25px 60px;
   display: flex;

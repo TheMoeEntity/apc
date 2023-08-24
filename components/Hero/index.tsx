@@ -1,6 +1,6 @@
 "use client";
 import banner2 from "../../public/images/law2.png";
-import headshot from "../../public/images/headshot2.jpeg";
+import headshot from "../../public/images/headshot.png";
 import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";

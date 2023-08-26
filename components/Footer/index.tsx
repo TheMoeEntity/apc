@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import logo from "../../public/images/nosratilogo.png";
+import logo from "../../public/images/logo-option.png";
 import Image from "next/image";
 import icon1 from "../../public/images/1.png";
 import icon2 from "../../public/images/2.png";

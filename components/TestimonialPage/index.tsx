@@ -45,7 +45,7 @@ const TestimonialPage = () => {
                 </div>
                 <div className={styles.author}>
                   <div>
-                    <b>{x.author}</b>
+                    <b>- {x.author}</b>
                   </div>
                 </div>
               </div>

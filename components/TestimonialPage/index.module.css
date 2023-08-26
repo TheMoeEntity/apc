@@ -115,12 +115,14 @@
   border-radius: 50%;
   position: relative;
   margin: 15px;
+  display: none;
 }
 .author {
   display: flex;
   align-items: center;
   justify-content: center;
   height: auto;
+  margin: 20px 0 0 20px;
 }
 @media screen and (max-width: 600px) {
   .hero {

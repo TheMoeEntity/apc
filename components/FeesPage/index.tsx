@@ -1,8 +1,4 @@
 "use client";
-import icon1 from "../../public/images/1.png";
-import icon2 from "../../public/images/2.png";
-import icon3 from "../../public/images/3.png";
-import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";
 import { useHero } from "../../helpers/hooks/useHero";

@@ -303,8 +303,8 @@
   width: fit-content;
 }
 .headerTwo > div:nth-child(1) {
-  width: 235.8px;
-  height: 44px;
+  width: calc(0.3 * 800px);
+  height: calc(0.3 * 178px);
 }
 .headerTwo > div > ul > li {
   display: inline-block;
@@ -360,7 +360,8 @@
     padding: 0 80px;
   }
   .headerTwo > div:nth-child(1) {
-    transform: scale(0.8);
+    width: calc(0.27 * 800px);
+    height: calc(0.27 * 178px);
   }
   .bars {
     display: block;
@@ -375,7 +376,8 @@
     padding: 0 40px;
   }
   .headerTwo > div:nth-child(1) {
-    transform: scale(0.7);
+    width: calc(0.25 * 800px);
+    height: calc(0.25 * 178px);
   }
   .bars i {
     font-size: 30px;
@@ -383,7 +385,8 @@
 }
 @media screen and (max-width: 470px) {
   .headerTwo > div:nth-child(1) {
-    transform: scale(0.6) translateX(-100px);
+    width: calc(0.23 * 800px);
+    height: calc(0.23 * 178px);
   }
   /* .headerTwo {
         padding: 0 10px;

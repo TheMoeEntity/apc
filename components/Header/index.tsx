@@ -1,6 +1,6 @@
 "use client";
 import styles from "./index.module.css";
-import logo from "../../public/images/nosratilogo.png";
+import logo from "../../public/images/logo-option.png";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
@@ -9,11 +9,9 @@ import { useLinks, useSideBar, useSticky } from "../../helpers/hooks";
 
 const Header = () => {
   const router = useRouter();
-  const sideContent = useRef(null);
-  const { sidebar, setSideBar, hide, show } = useSideBar(sideContent);
-  const [sticky, setSticky] = useState("");
+  const { sidebar, setSideBar, hide, show, sideContent } = useSideBar();
   const { links, LinkAction } = useLinks();
-  const headerRef = useSticky(styles.isSticky, setSticky);
+  const { headerRef, sticky } = useSticky(styles.isSticky);
 
   return (
     <div className={styles.header}>
@@ -83,7 +81,6 @@ const Header = () => {
       </div>
       <div className={`${styles.headerTwo} ${sticky}`}>
         <div>
-          x
           <Link href={`/`}>
             <Image
               src={logo}

@@ -11,8 +11,9 @@ import {
 import { Helpers, linkType } from "..";
 import { isValidEmail } from "../../utils";
 
-export const useSticky = (styles: string, setSticky: any) => {
+export const useSticky = (styles: string) => {
   const headerRef = useRef(null);
+  const [sticky, setSticky] = useState("");
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
 
@@ -27,7 +28,7 @@ export const useSticky = (styles: string, setSticky: any) => {
     const stickyClass = scrollTop >= number ? styles : "";
     setSticky(stickyClass);
   };
-  return headerRef;
+  return { headerRef, sticky };
 };
 
 export const useLinks = () => {
@@ -52,8 +53,9 @@ export const useLinks = () => {
   };
   return { links, LinkAction };
 };
-export const useSideBar = (sideContent: MutableRefObject<HTMLDivElement>) => {
+export const useSideBar = () => {
   const [sidebar, setSideBar] = useState(false);
+  const sideContent = useRef(null);
   const show = () => {
     setSideBar(true);
     setTimeout(() => {
@@ -69,7 +71,7 @@ export const useSideBar = (sideContent: MutableRefObject<HTMLDivElement>) => {
       sideContent.current.style.visibility = "hidden";
     }, 400);
   };
-  return { sidebar, setSideBar, hide, show };
+  return { sidebar, setSideBar, hide, show, sideContent };
 };
 export const useSubmit = () => {
   const { enqueueSnackbar } = useSnackbar();

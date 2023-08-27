@@ -237,7 +237,7 @@
 }
 .headerTwo {
   width: 100%;
-  height: 120px;
+  height: 140px;
   background-color: white;
   display: flex;
   color: black;
@@ -335,7 +335,7 @@
   }
   .headerTwo {
     padding: 0 30px;
-    height: 75px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 1051px) {
@@ -388,9 +388,9 @@
     width: calc(0.23 * 800px);
     height: calc(0.23 * 178px);
   }
-  /* .headerTwo {
-        padding: 0 10px;
-    } */
+  .headerTwo {
+    padding: 0 25px 0 20px;
+  }
 }
 @media screen and (max-width: 440px) {
   .sidecontent {

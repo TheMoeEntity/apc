@@ -62,12 +62,12 @@ export class Helpers {
     container?: MutableRefObject<HTMLDivElement>
   ) => {
     const event = e.target as HTMLElement;
-    const height = (
-      (e.target as HTMLElement).nextSibling.nextSibling as HTMLElement
-    ).style.maxHeight;
-    const elemHeight =
-      ((e.target as HTMLElement).nextSibling.nextSibling as HTMLElement)
-        .scrollHeight + 80;
+    const entry =
+      (e.target as HTMLElement).nextSibling ??
+      (e.target as HTMLElement).parentElement.nextSibling;
+    console.log(entry);
+    const height = (entry.nextSibling as HTMLElement).style.maxHeight;
+    const elemHeight = (entry.nextSibling as HTMLElement).scrollHeight + 80;
 
     event.style.background =
       height === "1300px" || height === "0px" ? "#B7A189" : "#0A1849";

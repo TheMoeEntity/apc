@@ -2,8 +2,8 @@
   width: 100%;
   height: auto;
   position: relative;
-  /* scroll-padding-top: 150px; */
-  scroll-margin-top: 120px;
+  scroll-padding-top: 170px;
+  scroll-margin-top: 190px;
 }
 .overlay {
   /* position: absolute;

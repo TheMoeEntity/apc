@@ -12,6 +12,7 @@
   width: 70%;
   color: whitesmoke;
   display: flex;
+  height: fit-content;
   flex-flow: row wrap;
   justify-content: center;
   z-index: 20;
@@ -22,12 +23,12 @@
 .caption > div:first-child {
   height: calc(0.47 * 1038px);
   width: calc(0.47 * 1847px);
-  flex: 40%;
+  width: 40%;
   position: relative;
 }
 .caption > div:nth-child(2) {
   height: 400px;
-  flex: 60%;
+  width: 60%;
   position: relative;
   padding: 25px 60px;
   display: flex;
@@ -96,15 +97,31 @@
   .caption > div:first-child {
     height: calc(0.418 * 1038px);
     width: calc(0.418 * 1847px);
+    max-width: calc(0.418 * 1847px);
+    flex: 40%;
+  }
+}
+@media screen and (max-width: 837px) {
+  .caption > div:first-child {
+    height: calc(0.418 * 1038px);
+    width: calc(0.418 * 1847px);
+    max-width: calc(0.418 * 1847px);
+    flex: 40%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .caption > div:first-child {
+    height: calc(0.418 * 1038px);
+    width: calc(0.418 * 1847px);
+    max-width: calc(0.418 * 1847px);
+    width: 45%;
   }
   .caption > div:nth-child(2) {
-    height: 400px;
-    flex: 50%;
-    position: relative;
-    padding: 25px 60px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    width: 55%;
+    padding: 25px 30px;
+  }
+  .caption h1 {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -117,6 +134,9 @@
   .hero {
     height: 450px;
     padding: 70px 0;
+  }
+  .caption > div:nth-child(2) {
+    width: 100%;
   }
   .caption > div:first-child {
     height: 250px;

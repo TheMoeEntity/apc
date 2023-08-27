@@ -30,7 +30,9 @@ const Hero = () => {
         </div>
         <div>
           <div>
-            <span>Nosrati Law Group</span>
+            <span>
+              <b> NOSRATI LAW GROUP</b>
+            </span>
           </div>
           <div>
             <h1>PROFESSIONAL LAW FIRM</h1>

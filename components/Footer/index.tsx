@@ -46,22 +46,9 @@ const Footer = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div>9777 Wilshire Blvd., Suite 400</div>
+            <div>9777 Wilshire Blvd., Suite 400, Beverly Hills, CA 90212</div>
           </div>
 
-          <div>
-            <div style={{ width: "30px", height: "30px" }}>
-              <Image
-                src={icon1}
-                alt="card-image"
-                fill={true}
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div>Beverly Hills, CA 90212</div>
-          </div>
           <div>
             <div style={{ width: "30px", height: "30px" }}>
               <Image
@@ -95,12 +82,14 @@ const Footer = () => {
             Power of Attorney
           </div>
           <div>
-            <span>
-              <i className="fa fa-angle-right"></i>
-            </span>
-            <span style={{ fontSize: "15px", textAlign: "center" }}>
-              Medical Health Care Directives & HIPPA &nbsp;&nbsp;&nbsp;&nbsp;
-              release <br />
+            <span className={styles.last} style={{ fontSize: "15px" }}>
+              <span style={{ width: "10%" }}>
+                <i className="fa fa-angle-right"></i>
+              </span>
+
+              <span style={{ width: "90%" }}>
+                Medical Health Care Directives & HIPPA release
+              </span>
             </span>
           </div>
         </div>

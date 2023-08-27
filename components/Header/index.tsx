@@ -61,8 +61,8 @@ const Header = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;·
           </div>
           <div>
-            <i className="fa fa-envelope"></i> 9777 Wilshire Blvd., Suite 400
-            &nbsp;&nbsp;&nbsp;&nbsp;·
+            <i className="fa fa-envelope"></i> 9777 Wilshire Blvd., Suite 400,
+            Beverly Hills &nbsp;&nbsp;&nbsp;&nbsp;·
           </div>
         </div>
 

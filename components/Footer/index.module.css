@@ -50,7 +50,7 @@
 }
 .grid > div:nth-child(3) > div {
   margin: 35px 0;
-  cursor: pointer;
+  cursor: auto;
 }
 .grid > div:nth-child(3) > div i {
   margin-right: 13px;
@@ -71,7 +71,14 @@
 .logo img {
   object-fit: cover;
 }
-.grid > div:last-child {
+.grid > div:last-child > div {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.grid > div:last-child > div i {
+  width: 20px;
+  height: 20px;
 }
 .grid > div:last-child form {
   margin-top: 80px;
@@ -130,6 +137,11 @@
   color: #b7a189;
   font-size: 8px;
 }
+.last {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 @media screen and (max-width: 400px) {
   .footer {
     padding: 40px 15px !important;

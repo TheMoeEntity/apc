@@ -120,14 +120,7 @@
   font-weight: bolder;
   display: block;
 }
-@media screen and (max-width: 1042px) {
-}
-@media screen and (max-width: 922px) {
-}
-@media screen and (max-width: 542px) {
-}
-@media screen and (max-width: 400px) {
-}
+
 @media screen and (max-width: 1166px) {
   .main {
     width: 96%;

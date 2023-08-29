@@ -13,11 +13,11 @@ const About = () => {
         <div className={styles.man}>
           <Image
             src={man}
-            alt="card-image"
+            alt="family"
             fill
             quality={100}
             priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 2901px) 100vw, (max-width: 2901px) 50vw, 33vw"
           />
         </div>
         <div className={styles.stuff}>

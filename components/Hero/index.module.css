@@ -26,11 +26,14 @@
   width: 40%;
   position: relative;
 }
+.caption > div:first-child img {
+  object-fit: contain !important;
+}
 .caption > div:nth-child(2) {
   height: 400px;
   width: 60%;
   position: relative;
-  padding: 25px 60px;
+  padding: 25px 50px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -118,7 +121,7 @@
   }
   .caption > div:nth-child(2) {
     width: 55%;
-    padding: 25px 30px;
+    padding: 25px 18px;
   }
   .caption h1 {
     font-size: 40px;
@@ -132,25 +135,28 @@
     width: 90%;
   }
   .hero {
-    height: 450px;
+    height: 700px;
     padding: 70px 0;
   }
   .caption > div:nth-child(2) {
     width: 100%;
   }
+  .caption {
+    display: block;
+  }
   .caption > div:first-child {
     height: 250px;
-    flex: 42%;
+    width: calc(0.08 * 1847px);
     position: relative;
-    display: none;
+    display: block;
   }
   .caption {
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
     width: 90%;
   }
 
   .caption > div:nth-child(2) {
-    height: fit-content;
+    height: auto;
     flex: 100%;
     margin: 0;
     padding: 25px 0px;

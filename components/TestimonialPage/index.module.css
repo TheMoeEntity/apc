@@ -4,8 +4,8 @@
 }
 .hero {
   width: 100%;
-  height: 350px;
-  background-image: url("/images/backgound23.jpeg");
+  height: 300px;
+  background-image: linear-gradient(#0a0e1e, #040e30);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,7 +74,8 @@
 .grid > div {
   flex: 29%;
   margin: 20px;
-  height: auto;
+  height: fit-content;
+  background-color: #ffff;
 }
 .grid > div p {
   color: #737373;

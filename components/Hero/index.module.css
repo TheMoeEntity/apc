@@ -135,7 +135,8 @@
     width: 90%;
   }
   .hero {
-    height: 95vh;
+    min-height: 100vh;
+    max-height: auto;
     padding: 70px 0;
   }
   .caption > div:nth-child(2) {
@@ -145,8 +146,8 @@
     display: block;
   }
   .caption > div:first-child {
-    height: 250px;
-    width: calc(0.08 * 1847px);
+    height: 350px;
+    width: calc(0.13 * 1847px);
     position: relative;
     display: block;
   }
@@ -163,5 +164,34 @@
   }
   .caption > div:nth-child(2) > div {
     margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .caption > div:first-child {
+    height: 280px;
+    width: calc(0.09 * 1847px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    min-height: 110vh;
+    max-height: auto;
+    padding: 70px 0;
+  }
+  .caption > div:first-child {
+    height: 250px;
+    width: calc(0.075 * 1847px);
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero {
+    min-height: 1000px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .hero {
+    min-height: 120vh;
   }
 }

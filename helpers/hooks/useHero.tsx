@@ -1,3 +1,6 @@
+import Image from "next/image";
+import preload from "../../public/images/shutter3.jpg";
+
 export const useHero = (
   pText: string,
   h2Text: string,
@@ -7,6 +10,16 @@ export const useHero = (
 ): JSX.Element => {
   return (
     <div className={hero}>
+      <div style={{ display: "none" }}>
+        <Image
+          src={preload}
+          alt="preload"
+          quality={100}
+          priority={true}
+          width={20}
+          height={20}
+        />
+      </div>
       <div className={caption}>
         <div className={line}></div>
         <div>

@@ -89,6 +89,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+body::after {
+  content: url("/images/shutter3.jpg");
+  display: none;
+}
 input[type="text"],
 textarea,
 input {

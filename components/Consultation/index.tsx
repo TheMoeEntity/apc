@@ -11,7 +11,7 @@ const Consultation = () => {
       <div className={styles.overlay}></div>
       <div className={styles.consult}>
         <div className={styles.title}>
-          <h2>Free Consulting</h2>
+          <h2>Free Consultation</h2>
           <span>
             Please contact us for a free confidential one-hour consultation. We
             look forward to meeting you and earning your business.

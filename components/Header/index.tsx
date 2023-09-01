@@ -74,23 +74,21 @@ const Header = () => {
               onClick={() => router.push("/#contact")}
               className={styles.freeConsult}
             >
-              <i className="fa-solid fa-envelope"></i> Free Consulting
+              <i className="fa-solid fa-envelope"></i> Free Consultation
             </span>
           </div>
         </div>
       </div>
       <div className={`${styles.headerTwo} ${sticky}`}>
-        <div>
-          <Link href={`/`}>
-            <Image
-              src={logo}
-              alt="card-image"
-              fill={true}
-              quality={100}
-              priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </Link>
+        <div onClick={() => LinkAction("")}>
+          <Image
+            src={logo}
+            alt="card-image"
+            fill={true}
+            quality={100}
+            priority={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div className={styles.links}>
           <ul>

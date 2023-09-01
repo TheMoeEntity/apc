@@ -1,8 +1,7 @@
 "use client";
-import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/family2.jpg";
+import man from "../../public/images/shutter1.jpg";
 import shape from "../../public/images/shape-1.png";
 import { useHero } from "../../helpers/hooks/useHero";
 

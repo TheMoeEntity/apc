@@ -74,7 +74,7 @@ const Header = () => {
               onClick={() => router.push("/#contact")}
               className={styles.freeConsult}
             >
-              <i className="fa-solid fa-envelope"></i> Free Consultation
+              <i className="fa-solid fa-envelope"></i> Free Consulting
             </span>
           </div>
         </div>

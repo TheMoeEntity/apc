@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
           <div>
             <Link href="/#contact">
-              <button>FREE CONSULTATION</button>
+              <button>FREE CONSULTING</button>
             </Link>
           </div>
         </div>

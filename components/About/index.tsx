@@ -1,7 +1,7 @@
 "use client";
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/shutter5.jpg";
+import man from "../../public/images/shutter5_11zon.jpg";
 import shape from "../../public/images/shape-1.png";
 
 import Link from "next/link";

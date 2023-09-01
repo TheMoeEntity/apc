@@ -1,8 +1,7 @@
 "use client";
-import firm from "../../public/images/family.jpg";
+import firm from "../../public/images/shutter3_11zon.jpg";
 import Image from "next/image";
 import styles from "./index.module.css";
-import Link from "next/link";
 import { Helpers } from "../../helpers";
 import { useHero } from "../../helpers/hooks/useHero";
 

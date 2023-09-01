@@ -1,5 +1,5 @@
 import Image from "next/image";
-import preload from "../../public/images/shutter3.jpg";
+import preload from "../../public/images/shutter3_11zon.jpg";
 
 export const useHero = (
   pText: string,

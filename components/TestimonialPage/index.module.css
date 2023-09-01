@@ -4,8 +4,9 @@
 }
 .hero {
   width: 100%;
-  height: 300px;
-  background-image: linear-gradient(#0a0e1e, #040e30);
+  height: 350px;
+  background-image: linear-gradient(#0a0e1ec0, #040e30bd),
+    url("/images/shutter3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

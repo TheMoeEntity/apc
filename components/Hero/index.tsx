@@ -1,5 +1,5 @@
 "use client";
-import banner2 from "../../public/images/law2.png";
+import banner2 from "../../public/images/shutter1.jpg";
 import headshot from "../../public/images/headshot.png";
 import Image from "next/image";
 import styles from "./index.module.css";

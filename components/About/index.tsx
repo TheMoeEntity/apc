@@ -1,7 +1,7 @@
 "use client";
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/family2.jpg";
+import man from "../../public/images/shutter5.jpg";
 import shape from "../../public/images/shape-1.png";
 
 import Link from "next/link";
@@ -17,7 +17,7 @@ const About = () => {
             fill
             quality={100}
             priority={true}
-            sizes="(max-width: 2901px) 100vw, (max-width: 2901px) 50vw, 33vw"
+            sizes="(max-width: 6720px) 100vw, (max-width: 2901px) 50vw, 33vw"
           />
         </div>
         <div className={styles.stuff}>

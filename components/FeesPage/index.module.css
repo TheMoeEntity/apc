@@ -4,8 +4,9 @@
 }
 .hero {
   width: 100%;
-  height: 300px;
-  background-image: linear-gradient(#0a0e1e, #040e30);
+  height: 350px;
+  background-image: linear-gradient(#0a0e1ec0, #040e30bd),
+    url("/images/shutter3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -66,12 +67,13 @@
 }
 .content > h2 {
   font-size: 35px;
-  margin: 20px 0;
+  margin: 0px 0 20px 0;
   color: black;
 }
 .content p {
   font-size: 16px;
-  padding-right: 50px;
+  text-align: justify;
+  /* padding-right: 10px; */
 }
 .cards {
   margin: 70px auto;
@@ -118,12 +120,7 @@
   height: 60px;
   position: relative;
 }
-@media screen and (max-width: 600px) {
-  .hero {
-    height: 300px;
-    background-position: left;
-    background-attachment: scroll;
-  }
+@media screen and (max-width: 700px) {
   .cards {
     flex-flow: column wrap;
     width: 100%;
@@ -135,6 +132,14 @@
     max-width: 100%;
     margin: 20px 0px;
   }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 300px;
+    background-position: left;
+    background-attachment: scroll;
+  }
+
   .content {
     width: 100%;
     padding: 80px 15px;

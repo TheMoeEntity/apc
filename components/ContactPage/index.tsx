@@ -67,14 +67,14 @@ const Contact = () => {
       <div className={styles.cards}>
         <div>
           <div className={styles.icons}>
-            <Image
-              src={icon1}
-              alt="card-image"
-              fill={true}
-              quality={100}
-              priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <span>
+              <i
+                style={{
+                  marginRight: "15px",
+                }}
+                className="fa-solid fa-location-dot"
+              ></i>
+            </span>
           </div>
           <h2>
             <strong>Office Address</strong>
@@ -87,14 +87,14 @@ const Contact = () => {
         </div>
         <div>
           <div className={styles.icons}>
-            <Image
-              src={icon2}
-              alt="card-image"
-              fill={true}
-              quality={100}
-              priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <span>
+              <i
+                style={{
+                  marginRight: "15px",
+                }}
+                className="fa-regular fa-message"
+              ></i>
+            </span>
           </div>
           <h2>
             <strong>Connect with us</strong>
@@ -107,14 +107,14 @@ const Contact = () => {
         </div>
         <div>
           <div className={styles.icons}>
-            <Image
-              src={icon3}
-              alt="card-image"
-              fill={true}
-              quality={100}
-              priority={true}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+            <span>
+              <i
+                style={{
+                  marginRight: "15px",
+                }}
+                className="fa-solid fa-phone"
+              ></i>
+            </span>
           </div>
           <h2>
             <strong>Call us</strong>

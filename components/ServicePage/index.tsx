@@ -165,7 +165,7 @@ const ServicePage = () => {
                     <i className="fas fa-plus"></i>
                   </span>{" "}
                   &nbsp;&nbsp;&nbsp;
-                  <span>Medical Health Care Direcives & HIPPA Release</span>
+                  <span>Medical Health Care Directives & HIPPA Release</span>
                 </div>
                 <div></div>
                 <div>

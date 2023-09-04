@@ -181,7 +181,14 @@
 .icons {
   width: 60px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+}
+.icons i {
+  font-size: 40px;
+  color: #ffb603;
 }
 @media screen and (max-width: 963px) {
   .maps {

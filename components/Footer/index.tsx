@@ -36,30 +36,30 @@ const Footer = () => {
         <div>
           <h2>CONTACT INFO</h2>
           <div>
-            <div style={{ width: "30px", height: "30px" }}>
-              <Image
-                src={icon1}
-                alt="card-image"
-                fill={true}
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
+            <span>
+              <i
+                style={{
+                  fontSize: "25px",
+                  color: "#b7a189",
+                  marginRight: "15px",
+                }}
+                className="fa-solid fa-location-dot"
+              ></i>
+            </span>
             <div>9777 Wilshire Blvd., Suite 400, Beverly Hills, CA 90212</div>
           </div>
 
           <div>
-            <div style={{ width: "30px", height: "30px" }}>
-              <Image
-                src={icon3}
-                alt="card-image"
-                fill={true}
-                quality={100}
-                priority={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
+            <span>
+              <i
+                style={{
+                  fontSize: "25px",
+                  color: "#b7a189",
+                  marginRight: "15px",
+                }}
+                className="fa-solid fa-phone"
+              ></i>
+            </span>
             <div>310-288-9780</div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const About = () => {
             With a commitment to guide you through estate planning, we create
             personalized plans tailored to your {`family's`} needs. From simple
             to substantial estates, {`we're`} here to ensure your {`family's`}{" "}
-            future. Learn more
+            future.
           </p>
           <div className={styles.abzt}>
             <Link href="/about">

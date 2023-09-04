@@ -4,6 +4,7 @@ import Script from "next/script";
 import { SnackbarProvider } from "notistack";
 import Footer from "./Footer/index.tsx";
 import { usePathname } from "next/navigation";
+import { Helpers } from "../helpers";
 
 const Layout = ({ children }) => {
   const pathname = usePathname();
@@ -13,13 +14,13 @@ const Layout = ({ children }) => {
       classes={{ containerRoot: "z-alert" }}
       anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
     >
-      <Header />
+      {Helpers.checkValid(pathname) && <Header />}
       {children}
       <Script
         src="https://kit.fontawesome.com/4ef8c63dd7.js"
         crossOrigin="anonymous"
       ></Script>
-      <Footer />
+      {Helpers.checkValid(pathname) && <Footer />}
     </SnackbarProvider>
   );
 };

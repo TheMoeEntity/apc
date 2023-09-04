@@ -97,7 +97,7 @@
   color: #b7a189;
 }
 .abzt {
-  margin-top: 40px;
+  margin-top: 15px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -108,7 +108,7 @@
   margin-right: 30px;
 }
 .abzt button {
-  width: 200px;
+  width: 150px;
 }
 .check > div {
   margin: 15px;

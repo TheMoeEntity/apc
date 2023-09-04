@@ -4,7 +4,22 @@ export type linkType = {
   isActive: boolean;
   href: string;
 };
+export const validRoutes: string[] = [
+  "/localhost:3000",
+  "/",
+  "/mlawsite.vercel.app",
+  "/process",
+  "/about",
+  "/services",
+  "/process",
+  "/fees",
+  "/testimonials",
+  "/contact",
+];
 export class Helpers {
+  static checkValid = (pathname: string): boolean => {
+    return validRoutes.includes(pathname);
+  };
   static testimonials: { text: string; author: string }[] = [
     {
       text: "I reached out to my close family friend and attorney looking for a referral to assist me with the review of my Family's Trust. Sophie was his immediate response as they are fellow attys and office neighbors and what ablessing that turned out to be. She e-mailed me to introduce herself and I immediately called her (you can hear her smile in her voice) and she asked how she could help. This was difficult as I was sharing some very personal information with someone I really didn't know but she made me feel comfortable so I provided her the information she needed to review our trust, she acknowledged it's receipt and provided me a complete review within a few days. She answered all my questions, provided me with a few items to look into and made a few suggestions for the family to discuss to eliminate any possible confusion in the future. She also provided me with answers to some questions I didn't know I should have asked. As I mentioned earlier these things can be difficult no matter how much you know or don't know or think you know! Sophie will do an outstanding job helping you navigate the entire Estate Planning process providing answers to all your questions and then some...Thanks Again Sophie",

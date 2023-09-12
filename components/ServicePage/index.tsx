@@ -1,3 +1,4 @@
+"use client";
 import { Helpers } from "../../helpers";
 import { useHero } from "../../helpers/hooks/useHero";
 import styles from "./index.module.css";

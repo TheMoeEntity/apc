@@ -1,4 +1,3 @@
-"use client";
 import firm from "../../public/images/shutter3_11zon.jpg";
 import Image from "next/image";
 import styles from "./index.module.css";

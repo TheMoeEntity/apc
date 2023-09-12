@@ -2,7 +2,6 @@
 import styles from "./index.module.css";
 import logo from "../../public/images/logo-option.png";
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLinks, useSideBar, useSticky } from "../../helpers/hooks";

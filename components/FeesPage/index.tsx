@@ -1,6 +1,4 @@
-"use client";
 import styles from "./index.module.css";
-import "react-slideshow-image/dist/styles.css";
 import { useHero } from "../../helpers/hooks/useHero";
 
 const FeesPage = () => {

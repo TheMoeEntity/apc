@@ -1,4 +1,3 @@
-"use client";
 import styles from "./index.module.css";
 import Image from "next/image";
 import family from "../../public/images/shutter4_11zon.jpg";

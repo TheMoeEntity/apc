@@ -1,9 +1,7 @@
-"use client";
 import banner2 from "../../public/images/shutter1_11zon.jpg";
 import headshot from "../../public/images/headshot_11zon.jpeg";
 import Image from "next/image";
 import styles from "./index.module.css";
-import "react-slideshow-image/dist/styles.css";
 import Link from "next/link";
 
 const Hero = () => {

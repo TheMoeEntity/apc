@@ -1,5 +1,3 @@
-"use client";
-import Link from "next/link";
 import { Helpers } from "../../helpers";
 import { useHero } from "../../helpers/hooks/useHero";
 import styles from "./index.module.css";
@@ -17,7 +15,6 @@ const ServicePage = () => {
       <div className={styles.content}>
         <div className={styles.grid}>
           <div>
-            {/* <h2>What We Are Expert At</h2> */}
             <div className={styles.accordion}>
               <div className={styles.first}>
                 <div onClick={(e) => Helpers.accordionEffect(e)}>

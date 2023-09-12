@@ -1,8 +1,6 @@
-"use client";
 import styles from "./index.module.css";
 import Image from "next/image";
 import man from "../../public/images/shutter1_11zon.jpg";
-import shape from "../../public/images/shape-1.png";
 import { useHero } from "../../helpers/hooks/useHero";
 
 const ProcessPage = () => {

@@ -21,7 +21,7 @@ const About = () => {
           />
         </div>
         <div className={styles.stuff}>
-          <div className={styles.img}>
+          {/* <div className={styles.img}>
             <div>
               <Image
                 src={shape}
@@ -32,22 +32,27 @@ const About = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-          </div>
-          <h4>&nbsp; &nbsp; &nbsp;WHO WE ARE??</h4>
-          <h2>Story About Us</h2>
+          </div> */}
+          {/* <h4>&nbsp; &nbsp; &nbsp;WHO WE ARE??</h4> */}
+          <h2>About Us</h2>
           <p>
-            At Nosrati Law Group, APC, we specialize in estate planning. Led by
-            attorney S. Sophie Nosrati, with 25+ years of legal experience, we
-            serve Beverly Hills and beyond. Sophie helps individuals, couples,
-            and families, including those with special needs. <br /> <br />
-            Sophie takes a personal interest in every {`client's`} story,
-            ensuring unique wishes and family dynamics are addressed. As a
-            parent, she understands the importance of securing your {`family's`}{" "}
-            legacy. <br /> <br />
-            With a commitment to guide you through estate planning, we create
-            personalized plans tailored to your {`family's`} needs. From simple
-            to substantial estates, {`we're`} here to ensure your {`family's`}{" "}
-            future.
+            As an experienced estate planning attorney with over 25 years of
+            legal experience, the firm’s managing member, S. Sophie Nosrati has
+            helped couples, parents, single persons, and families create
+            meaningful and effective estate plans with the goals of asset
+            protection, honoring their wishes, and minimizing taxes as
+            necessary. <br /> <br />
+            The right estate plan can provide asset protection, designate a
+            trusted guardian for your minor children, and secure your{" "}
+            {`family’s `}
+            legacy
+            <br /> <br />
+            Whether you need a simple estate plan or have substantial assets to
+            protect, we will personalize an estate plan that best meets your
+            needs <br /> <br />
+            We look forward to serving your estate planning needs and earning
+            your trust and business. Please call or email us for a free one-hour
+            confidential consultation
           </p>
           <div className={styles.abzt}>
             <Link href="/about">

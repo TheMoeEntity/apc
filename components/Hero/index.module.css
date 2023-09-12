@@ -24,8 +24,8 @@
   font-weight: 300;
 }
 .caption > div:first-child {
-  height: calc(0.47 * 1038px);
-  width: calc(0.47 * 1847px);
+  height: calc(0.4 * 1038px);
+  width: calc(0.4 * 1847px);
   width: 40%;
   position: relative;
 }
@@ -54,7 +54,7 @@
   font-size: 19px;
   display: block;
   width: 60%;
-  margin: 15px auto;
+  margin: 15px auto3841;
 }
 .caption h1 {
   margin: 10px 0;

@@ -28,25 +28,12 @@ const ProcessPage = () => {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.img}>
-              <div>
-                <Image
-                  src={shape}
-                  alt="card-image"
-                  fill={true}
-                  quality={100}
-                  priority={true}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-            <h4>&nbsp; &nbsp; &nbsp;ESTATE PLANNING PROCESS</h4>
-            <h2>The Process</h2>
+            <h2>ESTATE PLANNING PROCESS</h2>
             <p>
               The typical estate planning process will include two in-person
               meetings from introduction to a completed estate plan. Some
               clients might need additional time together to better understand
-              their options. I will be available by phone and email while
+              their options. I will also be available by phone and email while
               drafting your documents to make sure you have a full understanding
               of your documents. <br /> <br />
               For the average estate plan, a draft of your documents will be

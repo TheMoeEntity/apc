@@ -13,6 +13,7 @@ export const validRoutes: string[] = [
   "/services",
   "/process",
   "/fees",
+  "/forms",
   "/testimonials",
   "/contact",
 ];
@@ -64,6 +65,11 @@ export class Helpers {
       name: "Testimonials",
       isActive: false,
       href: "testimonials",
+    },
+    {
+      name: "Forms",
+      isActive: false,
+      href: "forms",
     },
     {
       name: "Contact Us",

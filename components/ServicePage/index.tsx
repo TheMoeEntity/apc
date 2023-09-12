@@ -8,7 +8,7 @@ const ServicePage = () => {
   return (
     <div className={styles.contact}>
       {useHero(
-        "OUR SERVICES AND LEGAL PRACTICE AREA",
+        "LEGAL SERVICES AND PRACTICE AREA",
         "Services",
         styles.hero,
         styles.caption,
@@ -17,7 +17,7 @@ const ServicePage = () => {
       <div className={styles.content}>
         <div className={styles.grid}>
           <div>
-            <h2>What We Are Expert At</h2>
+            {/* <h2>What We Are Expert At</h2> */}
             <div className={styles.accordion}>
               <div className={styles.first}>
                 <div onClick={(e) => Helpers.accordionEffect(e)}>
@@ -115,7 +115,7 @@ const ServicePage = () => {
                       your incapacity.
                     </li>
                     <li>
-                      Ensures proper care of minor or disables family members by
+                      Ensures proper care of minor or disabled family members by
                       the designation of a guardian for your minor chidren and
                       financial planning for disabled loved ones.
                     </li>
@@ -124,7 +124,7 @@ const ServicePage = () => {
                     </li>
                     <li>
                       Avoids probate in multiple states if property is owned
-                      outside of California;
+                      outside of California.
                     </li>
                     <li>
                       Encourages responsible behavior by future generations when
@@ -140,7 +140,7 @@ const ServicePage = () => {
             </div>
           </div>
           <div>
-            <h2>Legal Practices Area</h2>
+            {/* <h2>Legal Practices Area</h2> */}
             <div className={styles.accordion}>
               <div className={styles.first}>
                 <div onClick={(e) => Helpers.accordionEffect(e)}>
@@ -174,9 +174,9 @@ const ServicePage = () => {
                     selected by you to make important health care decisions on
                     your behalf during your incapacity. Most importantly, it
                     allows you to outline your end-of-life decisions and desires
-                    for life sustaining treatments. <br /> <br />A HIPPA release
+                    for life sustaining treatments. <br /> <br />A HIPPA Release
                     authorizes your medical team to discuss your treatment and
-                    condition with those you name in the release. Otherwise,
+                    condition with those you name in the Release. Otherwise,
                     under California law, those rendering medical treatment to
                     you will be prevented from releasing your medical
                     information and updates to your loved ones.

@@ -1,6 +1,6 @@
 "use client";
 import banner2 from "../../public/images/shutter1_11zon.jpg";
-import headshot from "../../public/images/headshot_11zon.jpg";
+import headshot from "../../public/images/headshot_11zon.jpeg";
 import Image from "next/image";
 import styles from "./index.module.css";
 import "react-slideshow-image/dist/styles.css";
@@ -29,13 +29,13 @@ const Hero = () => {
           />
         </div>
         <div>
-          <div>
-            <span>
+          {/* <div>
+            <span style={{ visibility: "hidden" }}>
               <b> NOSRATI LAW GROUP</b>
             </span>
-          </div>
+          </div> */}
           <div>
-            <h1>PROFESSIONAL LAW FIRM</h1>
+            <h1>NOSRATI LAW GROUP</h1>
           </div>
           <div>
             <p>
@@ -43,7 +43,7 @@ const Hero = () => {
               specializing in estate planning.
             </p>
           </div>
-          <div>
+          <div style={{ visibility: "hidden" }}>
             <Link href="/#contact">
               <button>FREE CONSULTATION</button>
             </Link>

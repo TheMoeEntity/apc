@@ -28,7 +28,7 @@ const AboutPage = () => {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.img}>
+            {/* <div className={styles.img}>
               <div>
                 <Image
                   src={shape}
@@ -39,8 +39,8 @@ const AboutPage = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-            </div>
-            <h4>&nbsp; &nbsp; &nbsp;STORY ABOUT NOSRATI LAW GROUP</h4>
+            </div> */}
+            {/* <h4>&nbsp; &nbsp; &nbsp;STORY ABOUT NOSRATI LAW GROUP</h4> */}
             <h2>About Us</h2>
             <p>
               Nosrati Law Group, APC is a Beverly Hills based client-centered
@@ -93,7 +93,9 @@ const AboutPage = () => {
               collaborative approach to estate planning, involving the
               client(s), accountants, and others, I will custom draft documents
               specifically tailored to each client’s needs. I am committed to
-              preserving your legacy.
+              preserving your legacy. <br /> <br /> I will custom draft
+              documents specifically tailored to each client’s needs, and am
+              committed to preserving your legacy.
             </p>
           </div>
           <div>
@@ -112,9 +114,8 @@ const AboutPage = () => {
             <p>
               S. Sophie Nosrati received her Bachelor’s Degree from the
               University of California, Los Angeles (Cum Laude), and her Juris
-              Doctorate degree from Southwestern School of Law, graduating in
-              the top 20% of her class. She has been an active member of the
-              California State Bar since 1997. <br />
+              Doctorate degree from Southwestern School of Law. She has been an
+              active member of the California State Bar since 1997. <br />
               <br />
               Ms. Nosrati is admitted to the United States District Court for
               the Central District of California, as well as the Supreme Court

@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/shutter5_11zon.jpg";
+import man from "../../public/images/shutter3_11zon.jpg";
 import Link from "next/link";
 
 const About = () => {

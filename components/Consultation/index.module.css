@@ -23,14 +23,14 @@
   border-radius: 10px;
   box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2),
     2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
-  height: 690px;
+  height: auto;
   left: 50%;
   top: -3px;
   transform: translate(-50%, -50px);
   z-index: 10;
   background-color: white;
   width: 60%;
-  padding: 70px 70px;
+  padding: 70px 70px 0 70px;
 }
 .title {
   margin: auto;
@@ -107,7 +107,6 @@
 @media screen and (max-width: 600px) {
   .consult {
     width: 90%;
-    height: 700px;
   }
 }
 @media screen and (max-width: 525px) {

@@ -26,58 +26,7 @@ const FormsPage = () => {
               </td>
             </tr>
           </tbody>
-          <tbody>
-            <tr>
-              <td>Client Intake Form</td>
-              <td>Capture client details for personalized service.</td>
-              <td style={{ textDecoration: "underline" }}>Download</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>Client Intake Form</td>
-              <td>Capture client details for personalized service.</td>
-              <td style={{ textDecoration: "underline" }}>Download</td>
-            </tr>
-          </tbody>
         </table>
-        {/* <div className={styles.cards}>
-          <div>
-            <div>
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div className={styles.packages}>PACKAGES</div>
-            <div>Revocable Living Trust</div>
-          </div>
-          <div>
-            <div>
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div className={styles.packages}>PACKAGES</div>
-            <div>Wills</div>
-          </div>
-          <div>
-            <div>
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div className={styles.packages}>PACKAGES</div>
-            <div>Financial Powers of Attorney</div>
-          </div>
-          <div>
-            <div>
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div className={styles.packages}>PACKAGES</div>
-            <div>Advance Health Care Directives</div>
-          </div>
-          <div>
-            <div>
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div className={styles.packages}>PACKAGES</div>
-            <div>HIPPA Authorizations</div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

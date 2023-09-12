@@ -44,6 +44,9 @@ const Header = () => {
               <Link href={"/testimonials"}>Testimonials</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
+              <Link href={"/forms"}>Forms</Link>
+            </li>
+            <li onClick={() => setSideBar(false)}>
               <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>

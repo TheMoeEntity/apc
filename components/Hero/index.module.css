@@ -24,9 +24,9 @@
   font-weight: 300;
 }
 .caption > div:first-child {
-  height: calc(0.4 * 1038px);
-  width: calc(0.4 * 1847px);
-  width: 40%;
+  height: calc(0.3 * 1360px);
+  width: calc(0.3 * 1038px);
+  /* width: 40%; */
   position: relative;
 }
 .caption > div:first-child img {
@@ -101,25 +101,25 @@
     width: 93%;
   }
   .caption > div:first-child {
-    height: calc(0.418 * 1038px);
-    width: calc(0.418 * 1847px);
-    max-width: calc(0.418 * 1847px);
+    height: calc(0.28 * 1360px);
+    width: calc(0.28 * 1038px);
+    max-width: calc(0.28 * 1360px);
     flex: 40%;
   }
 }
 @media screen and (max-width: 837px) {
   .caption > div:first-child {
-    height: calc(0.418 * 1038px);
-    width: calc(0.418 * 1847px);
-    max-width: calc(0.418 * 1847px);
+    height: calc(0.28 * 1360px);
+    width: calc(0.28 * 1038px);
+    max-width: calc(0.28 * 1360px);
     flex: 40%;
   }
 }
 @media screen and (max-width: 730px) {
   .caption > div:first-child {
-    height: calc(0.418 * 1038px);
-    width: calc(0.418 * 1847px);
-    max-width: calc(0.418 * 1847px);
+    height: calc(0.25 * 1360px);
+    width: calc(0.25 * 1038px);
+    max-width: calc(0.25 * 1360px);
     width: 45%;
   }
   .caption > div:nth-child(2) {
@@ -138,19 +138,21 @@
     width: 90%;
   }
   .hero {
-    min-height: 100vh;
+    min-height: 720px;
     max-height: auto;
     padding: 70px 0;
   }
   .caption > div:nth-child(2) {
     width: 100%;
+    height: fit-content;
   }
   .caption {
     display: block;
   }
   .caption > div:first-child {
-    height: 350px;
-    width: calc(0.13 * 1847px);
+    height: calc(0.21 * 1360px);
+    width: calc(0.21 * 1038px);
+    max-width: 100%;
     position: relative;
     display: block;
   }
@@ -171,30 +173,36 @@
 }
 
 @media screen and (max-width: 480px) {
+  .hero {
+    min-height: 690px;
+    max-height: auto;
+    padding: 70px 0;
+  }
   .caption > div:first-child {
-    height: 280px;
-    width: calc(0.09 * 1847px);
+    height: calc(0.19 * 1360px);
+    width: calc(0.19 * 1038px);
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 360px) {
   .hero {
-    min-height: 110vh;
+    min-height: 650px;
     max-height: auto;
     padding: 70px 0;
   }
   .caption > div:first-child {
-    height: 250px;
-    width: calc(0.075 * 1847px);
+    height: calc(0.17 * 1360px);
+    width: calc(0.17 * 1038px);
   }
 }
 @media screen and (max-width: 320px) {
   .hero {
-    min-height: 1000px;
+    min-height: 650px;
   }
 }
-@media screen and (max-height: 700px) {
+/* @media screen and (max-height: 700px) {
   .hero {
     min-height: 120vh;
   }
-}
+} */

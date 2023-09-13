@@ -1,10 +1,11 @@
 "use client";
-import styles from "./index.module.css";
+import styles from "../../app/page.module.css";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
-import { useSubmit } from "../../helpers/hooks";
+import { useResize, useSubmit } from "../../helpers/hooks";
 
 const Consultation = () => {
   const { submit, handlesubmit } = useSubmit();
+  const { val, setVal, textAreaRef } = useResize();
 
   return (
     <div id="contact" className={styles.about}>
@@ -26,7 +27,16 @@ const Consultation = () => {
             <input type="text" placeholder="Address*" required />
             <input type="text" placeholder="Email*" />
           </div>
-          <textarea placeholder="Message*" name=""></textarea>
+          <textarea
+            placeholder="Message*"
+            name=""
+            id=""
+            cols={10}
+            ref={textAreaRef}
+            value={val}
+            onChange={(e) => setVal(e.target.value)}
+            rows={1}
+          ></textarea>
           <button type="submit">{submit}</button>
         </form>
       </div>

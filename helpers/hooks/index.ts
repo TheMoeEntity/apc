@@ -73,7 +73,7 @@ export const useSideBar = () => {
   };
   return { sidebar, setSideBar, hide, show, sideContent };
 };
-export const useSubmit = () => {
+export const useSubmit = (val: string) => {
   const { enqueueSnackbar } = useSnackbar();
   const [submit, setSubmit] = useState("SUBMIT NOW");
   const handlesubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -115,6 +115,7 @@ export const useSubmit = () => {
       console.log(res);
       setTimeout(() => {
         (e.target as HTMLFormElement).reset();
+        val = "";
       }, 3000);
     } catch (error) {
       enqueueSnackbar(

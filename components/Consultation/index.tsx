@@ -4,8 +4,8 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import { useResize, useSubmit } from "../../helpers/hooks";
 
 const Consultation = () => {
-  const { submit, handlesubmit } = useSubmit();
   const { val, setVal, textAreaRef } = useResize();
+  const { submit, handlesubmit } = useSubmit(val);
 
   return (
     <div id="contact" className={styles.about}>

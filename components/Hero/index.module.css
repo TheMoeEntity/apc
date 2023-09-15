@@ -177,8 +177,8 @@
     padding: 70px 0;
   }
   .caption > div:first-child {
-    height: calc(0.2 * 1377px);
-    width: calc(0.2 * 1038px);
+    height: calc(0.17 * 1377px);
+    width: calc(0.17 * 1038px);
     max-width: 100%;
   }
 }
@@ -190,8 +190,8 @@
     padding: 70px 0;
   }
   .caption > div:first-child {
-    height: calc(0.17 * 1377px);
-    width: calc(0.17 * 1038px);
+    height: calc(0.14 * 1377px);
+    width: calc(0.14 * 1038px);
   }
 }
 @media screen and (max-width: 320px) {

@@ -7,13 +7,7 @@ import { useHero } from "../../helpers/hooks/useHero";
 const AboutPage = () => {
   return (
     <div className={styles.contact}>
-      {useHero(
-        "STORY ABOUT NOSRATI GROUP",
-        "About Us",
-        styles.hero,
-        styles.caption,
-        styles.line
-      )}
+      {useHero("", "About Us", styles.hero, styles.caption, styles.line)}
       <div className={styles.about}>
         <div className={styles.main}>
           <div className={styles.man}>
@@ -90,11 +84,9 @@ const AboutPage = () => {
               the evolving estate planning needs of my clients, including those
               with higher net worth and real estate portfolios. Through a
               collaborative approach to estate planning, involving the
-              client(s), accountants, and others, I will custom draft documents
-              specifically tailored to each client’s needs. I am committed to
-              preserving your legacy. <br /> <br /> I will custom draft
-              documents specifically tailored to each client’s needs, and am
-              committed to preserving your legacy.
+              client(s), accountants, and others. I will custom draft documents
+              specifically tailored to each client’s needs, and am committed to
+              preserving your legacy. <br /> <br />
             </p>
           </div>
           <div>

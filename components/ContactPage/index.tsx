@@ -12,13 +12,7 @@ const Contact = () => {
   const { val, setVal, textAreaRef } = useResize();
   return (
     <div className={styles.contact}>
-      {useHero(
-        "REACH OUT TO US",
-        "Contact Us",
-        styles.hero,
-        styles.caption,
-        styles.line
-      )}
+      {useHero("", "Contact Us", styles.hero, styles.caption, styles.line)}
       <div className={styles.maps}>
         <div>
           <div className="google-map-code">
@@ -39,7 +33,7 @@ const Contact = () => {
         <div>
           <form action="">
             <div className={styles.line}></div>
-            <h1>Get in touch</h1>
+            <h1>Contact Us</h1>
             <div className={styles.formGroup}>
               <input placeholder="Name" type="text" />
               <input placeholder="Email" type="text" />

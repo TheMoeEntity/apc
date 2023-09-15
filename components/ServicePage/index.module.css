@@ -62,7 +62,7 @@
 }
 .content {
   width: 100%;
-  padding: 90px 15px;
+  padding: 50px 15px;
   background-color: #fff;
 }
 .grid {
@@ -177,7 +177,7 @@
   }
   .content {
     width: 100%;
-    padding: 90px 0px;
+    padding: 20px 0px;
     background-color: #fff;
   }
   .first > div:nth-child(1) {

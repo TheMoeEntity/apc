@@ -1,6 +1,5 @@
 "use client";
 import styles from "../../app/page.module.css";
-import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import { useResize, useSubmit } from "../../helpers/hooks";
 
 const Consultation = () => {
@@ -40,12 +39,6 @@ const Consultation = () => {
           <button type="submit">{submit}</button>
         </form>
       </div>
-      <ParallaxProvider>
-        <ParallaxBanner
-          layers={[{ image: "/images/law24.png", speed: -30 }]}
-          className={`aspect-[2/1] ${styles.banner}`}
-        ></ParallaxBanner>
-      </ParallaxProvider>
     </div>
   );
 };

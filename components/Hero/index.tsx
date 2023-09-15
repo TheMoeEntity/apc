@@ -33,7 +33,9 @@ const Hero = () => {
             </span>
           </div> */}
           <div>
-            <h1>NOSRATI LAW GROUP</h1>
+            <h1>
+              {`It's`} never too early to plan for your {`family's `}future
+            </h1>
           </div>
           <div>
             <p>

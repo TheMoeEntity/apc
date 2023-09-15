@@ -7,7 +7,7 @@ const ServicePage = () => {
   return (
     <div className={styles.contact}>
       {useHero(
-        "LEGAL SERVICES AND PRACTICE AREA",
+        "LEGAL SERVICES AND PRACTICE AREAS",
         "Services",
         styles.hero,
         styles.caption,

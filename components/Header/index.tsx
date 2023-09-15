@@ -1,6 +1,6 @@
 "use client";
 import styles from "../../app/page.module.css";
-import logo from "../../public/images/logo-option.png";
+import logo from "../../public/images/logo-option3.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -71,7 +71,7 @@ const Header = () => {
         <div>
           <div>
             <i style={{ color: "#B7A189" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
+            Mon-Fri: 9.00 am - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
             <span
               onClick={() => router.push("/#contact")}
               className={styles.freeConsult}
@@ -82,7 +82,7 @@ const Header = () => {
         </div>
       </div>
       <div className={`${styles.headerTwo} ${sticky}`}>
-        <div onClick={() => LinkAction("")}>
+        <div className={styles.logo} onClick={() => LinkAction("")}>
           <Image
             src={logo}
             alt="card-image"

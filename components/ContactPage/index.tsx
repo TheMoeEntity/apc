@@ -1,10 +1,5 @@
 "use client";
-import Link from "next/link";
 import styles from "./index.module.css";
-import icon1 from "../../public/images/1.png";
-import icon2 from "../../public/images/2.png";
-import icon3 from "../../public/images/3.png";
-import Image from "next/image";
 import { useResize } from "../../helpers/hooks";
 import { useHero } from "../../helpers/hooks/useHero";
 

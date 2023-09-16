@@ -7,6 +7,7 @@ export type linkType = {
 export const validRoutes: string[] = [
   "/localhost:3000",
   "/",
+  "/nosratilawgroup.com",
   "/mlawsite.vercel.app",
   "/process",
   "/about",

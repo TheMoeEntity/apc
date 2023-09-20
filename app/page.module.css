@@ -523,7 +523,11 @@
   margin-bottom: 40px;
   color: white;
 }
-.footer .logo,
+.footer .logo {
+  width: calc(0.22 * 1116px);
+  height: calc(0.22 * 212px);
+  position: relative;
+}
 .header .logo {
   width: calc(0.28 * 1116px);
   height: calc(0.28 * 212px);

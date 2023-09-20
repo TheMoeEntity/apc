@@ -1,13 +1,14 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Layout from "../components/layout";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Nosrati Law Group",
   description:
-    "NLG is a boutique client-centered practice specializing in estate planning",
+    "Official homepage for NLG, a boutique client-centered practice specializing in estate planning",
   icons: {
     icon: {
       url: "/favicon.png",

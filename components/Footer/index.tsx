@@ -1,5 +1,5 @@
 import styles from "../../app/page.module.css";
-import logo from "../../public/images/logo-option.png";
+import logo from "../../public/images/logo-option3.png";
 import Image from "next/image";
 import Link from "next/link";
 

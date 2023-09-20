@@ -523,12 +523,14 @@
   margin-bottom: 40px;
   color: white;
 }
-.logo {
+.footer .logo,
+.header .logo {
   width: calc(0.28 * 1116px);
   height: calc(0.28 * 212px);
   position: relative;
 }
-.logo img {
+.footer .logo img,
+.header .logo img {
   object-fit: contain;
 }
 .grid > div:last-child > div {

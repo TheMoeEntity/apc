@@ -44,7 +44,7 @@ const Header = () => {
               <Link href={"/testimonials"}>Testimonials</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
-              <Link href={"/forms"}>Forms</Link>
+              <Link href={"/resources"}>Resources</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
               <Link href={"/contact"}>Contact</Link>
@@ -59,7 +59,7 @@ const Header = () => {
       >
         <div>
           <div>
-            <i className="fa fa-phone"></i> 310-288-9780
+            <i className="fa fa-envelope"></i> snosratilaw@gmail.com
             &nbsp;&nbsp;&nbsp;&nbsp;·
           </div>
           <div>
@@ -71,7 +71,7 @@ const Header = () => {
         <div>
           <div>
             <i style={{ color: "#B7A189" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 9.00 am - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
+            Mon-Fri: 8.30 am - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
             <span
               onClick={() => router.push("/#contact")}
               className={styles.freeConsult}

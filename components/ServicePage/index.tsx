@@ -47,11 +47,12 @@ const ServicePage = () => {
                     children until they are adults. <br /> <br />
                     <b>WHO NEEDS A CUSTOMIZED ESTATE PLAN?</b> <br /> <br />
                     Anyone who has minor children, owns real estate, or owns a
-                    business, or has assets over $150,000 should have a
-                    comprehensive estate plan. If you don’t have an estate plan,
-                    and pass away with over $150,000 in assets, all of your
-                    assets will go through an expensive, time consuming and
-                    public probate procedure.
+                    business, or has assets over $166,250 should have a
+                    comprehensive estate plan. This threshold amount
+                    changes periodically to match inflation. Probate is an
+                    expensive, time consuming and public process, and an
+                    effective estate plan can minimize the need for Court
+                    intervention.
                   </p>
                 </div>
               </div>
@@ -74,7 +75,7 @@ const ServicePage = () => {
                     on the backlog of the Court. Additionally, the fees and
                     costs associated with a probate hearing are according to a
                     strict statutory sliding scale in California ranging from
-                    $4,000 to more than $188,000 depending on the size of the
+                    $11,000 to more than $226,000 depending on the size of the
                     Estate. Probate fees and costs can be avoided with the
                     proper trust instrument.
                   </p>

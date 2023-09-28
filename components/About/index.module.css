@@ -19,7 +19,7 @@
   height: 90%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .main > div {
   width: 50%;
@@ -40,10 +40,11 @@
   height: 13px;
 }
 .main > div:nth-child(1) {
-  height: calc(0.07 * 4480px);
+  height: calc(0.27 * 1377px);
   transition: 0.88s;
-  width: calc(0.07 * 6720px);
+  width: calc(0.27 * 1038px);
   max-width: 100%;
+  margin-right: 60px;
 }
 .main > div:nth-child(1) > img {
   object-fit: contain !important;
@@ -124,23 +125,14 @@
   display: block;
 }
 
-@media screen and (max-width: 1166px) {
-  .main {
-    width: 98%;
-  }
-  /* .main > div {
-    width: 48%;
-  } */
-  .main > div:nth-child(1) {
-    height: calc(0.06 * 4480px);
-    transition: 0.88s;
-    width: calc(0.06 * 6720px);
-  }
-}
 @media screen and (max-width: 985px) {
   .main > div:nth-child(1) {
-    height: calc(0.051 * 4480px);
-    width: calc(0.051 * 6720px);
+    height: calc(0.24 * 1377px);
+    width: calc(0.24 * 1038px);
+    margin-right: 60px;
+  }
+  .main {
+    width: 93%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -148,24 +140,15 @@
     flex-flow: column wrap;
   }
   .main > div:nth-child(1) {
-    height: calc(0.06 * 4480px);
-    width: calc(0.06 * 6720px);
-    margin-bottom: 30px;
-  }
-  .main {
-    width: 90%;
+    height: calc(0.24 * 1377px);
+    width: calc(0.24 * 1038px);
+    margin-bottom: 60px;
   }
   .main > div {
     width: 100%;
   }
 }
 @media screen and (max-width: 665px) {
-  .main > div:nth-child(1) {
-    height: calc(0.055 * 4480px);
-    width: calc(0.055 * 6720px);
-    margin-bottom: 30px;
-  }
-
   .abzt > div:nth-child(1) {
     flex: 100%;
     height: 300px;
@@ -175,13 +158,25 @@
   .about {
     padding: 60px 20px 100px 20px;
   }
+  .main > div:nth-child(1) {
+    height: calc(0.22 * 1377px);
+    width: calc(0.22 * 1038px);
+  }
 }
 @media screen and (max-width: 478px) {
   .main {
     width: 100%;
   }
+  .main > div:nth-child(1) {
+    height: calc(0.2 * 1377px);
+    width: calc(0.2 * 1038px);
+  }
 }
 @media screen and (max-width: 426px) {
+  .main > div:nth-child(1) {
+    height: calc(0.19 * 1377px);
+    width: calc(0.19 * 1038px);
+  }
   .about {
     background-position: center;
   }

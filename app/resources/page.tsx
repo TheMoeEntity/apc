@@ -1,8 +1,8 @@
 import React from "react";
-import { FormsPage } from "../../components/FormsPage";
+import { ResourcesPage } from "../../components/ResourcesPage";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Nosrati Law Group | Forms",
+  title: "Nosrati Law Group | Resources",
   description: "Forms and legal documents",
   icons: {
     icon: {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     shortcut: { url: "/favicon.ico", type: "image/png" },
   },
 };
-const Forms = () => {
-  return <FormsPage />;
+const Resources = () => {
+  return <ResourcesPage />;
 };
 
-export default Forms;
+export default Resources;

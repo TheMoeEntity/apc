@@ -8,7 +8,7 @@ const TestimonialPage = () => {
   return (
     <div className={styles.contact}>
       {useHero(
-        "WHAT OUR CUSTOMERS THINK",
+        "WHAT OUR CLIENTS THINK",
         "Testimonials",
         styles.hero,
         styles.caption,

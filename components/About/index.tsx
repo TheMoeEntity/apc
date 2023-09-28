@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 import Image from "next/image";
-import man from "../../public/images/shutter3_11zon.jpg";
+import man from "../../public/images/headshot_11zon.jpeg";
 import Link from "next/link";
 
 const About = () => {
@@ -42,14 +42,14 @@ const About = () => {
             The right estate plan can provide asset protection, designate a
             trusted guardian for your minor children, and secure your{" "}
             {`family’s `}
-            legacy
+            legacy.
             <br /> <br />
             Whether you need a simple estate plan or have substantial assets to
             protect, we will personalize an estate plan that best meets your
-            needs <br /> <br />
+            needs. <br /> <br />
             We look forward to serving your estate planning needs and earning
-            your trust and business. Please call or email us for a free one-hour
-            confidential consultation
+            your trust and business. Please call or email us for a free thirty
+            minute confidential consultation.
           </p>
           <div className={styles.abzt}>
             <Link href="/about">

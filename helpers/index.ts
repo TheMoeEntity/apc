@@ -14,9 +14,42 @@ export const validRoutes: string[] = [
   "/services",
   "/process",
   "/fees",
-  "/forms",
+  "/resources",
   "/testimonials",
   "/contact",
+];
+type tableAssetType = { form: string; Description: string; link: string };
+export const tableAssets: tableAssetType[] = [
+  {
+    form: "Client Intake Form",
+    Description: `Capture client details for personalized service.`,
+    link: "./files/client-intake-form.docx",
+  },
+  {
+    form: "Estate Planning Organizer",
+    Description: `Comprehensive tool for managing estate planning documents and wishes.`,
+    link: "./files/Estate-Planning-Organizer.pdf",
+  },
+  {
+    form: "Duties of Trustee",
+    Description: `Trustees oversee assets and follow trust instructions.`,
+    link: "./files/Duties-of-Trustees.pdf",
+  },
+  {
+    form: "Questions Answered",
+    Description: `Frequently asked questions`,
+    link: "./files/FAQ.pdf",
+  },
+  {
+    form: "California Probate Fees",
+    Description: `Covers court and attorney costs.`,
+    link: "./files/Probate-Fees.pdf",
+  },
+  {
+    form: "Unclaimed Property",
+    Description: ``,
+    link: "https://ucpi.sco.ca.gov",
+  },
 ];
 export class Helpers {
   static checkValid = (pathname: string): boolean => {
@@ -68,9 +101,9 @@ export class Helpers {
       href: "testimonials",
     },
     {
-      name: "Forms",
+      name: "Resources",
       isActive: false,
-      href: "forms",
+      href: "resources",
     },
     {
       name: "Contact Us",

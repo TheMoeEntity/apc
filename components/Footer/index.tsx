@@ -22,7 +22,7 @@ const Footer = () => {
             Nosrati Law Group, APC, a boutique client-centered practice
             specializing in estate planning
           </p>
-          <strong>Business Hours :</strong> Monday Sat: 9am to 6pm
+          <strong>Business Hours :</strong> Monday Sat: 8:30am to 6:00pm
           <div className={styles.icons}>
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-twitter"></i>
@@ -59,6 +59,19 @@ const Footer = () => {
             </span>
             <div>310-288-9780</div>
           </div>
+          <div>
+            <span>
+              <i
+                style={{
+                  fontSize: "25px",
+                  color: "#b7a189",
+                  marginRight: "15px",
+                }}
+                className="fa-solid fa-envelope"
+              ></i>
+            </span>
+            <div>snosratilaw@gmail.com</div>
+          </div>
         </div>
         <div>
           <h2>OUR SERVICES</h2>
@@ -85,7 +98,7 @@ const Footer = () => {
               </span>
 
               <span style={{ width: "90%" }}>
-                Medical Health Care Directives & HIPPA release
+                Medical Health Care Directives & HIPPA Release
               </span>
             </span>
           </div>

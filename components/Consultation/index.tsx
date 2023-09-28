@@ -13,8 +13,9 @@ const Consultation = () => {
         <div className={styles.title}>
           <h2>Free Consultation</h2>
           <span>
-            Please contact us for a free confidential one-hour consultation. We
-            look forward to meeting you and earning your business.
+            Please contact us for a free confidential thirty minute
+            consultation. We look forward to meeting you and earning your
+            business.
           </span>
         </div>
         <form onSubmit={handlesubmit}>

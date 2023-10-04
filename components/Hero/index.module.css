@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Trajan-Regular";
-  src: url("/fonts/Trajan-Regular");
+  src: url("/fonts/Trajan-Regular.otf");
 }
 .hero {
   width: 100%;
@@ -62,8 +62,8 @@
 }
 .caption h1 {
   margin: 10px 0;
-  font-size: 35px;
-  font-family: "Trajan-Regular" !important;
+  font-size: 27px;
+  font-family: "Trajan-Regular";
 }
 .overlay {
   width: 100%;

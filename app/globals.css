@@ -72,7 +72,10 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
-
+@font-face {
+  font-family: "Trajan-Regular";
+  src: url("/fonts/Trajan-Regular");
+}
 * {
   box-sizing: border-box;
   padding: 0;

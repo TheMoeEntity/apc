@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Trajan-Regular";
+  src: url("/fonts/Trajan-Regular");
+}
 .hero {
   width: 100%;
   height: 600px;
@@ -59,6 +63,7 @@
 .caption h1 {
   margin: 10px 0;
   font-size: 35px;
+  font-family: "Trajan-Regular" !important;
 }
 .overlay {
   width: 100%;

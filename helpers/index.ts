@@ -28,7 +28,7 @@ export const tableAssets: tableAssetType[] = [
   {
     form: "Estate Planning Organizer",
     Description: `Comprehensive tool for managing estate planning documents and wishes.`,
-    link: "./files/Estate-Planning-Organizer.pdf",
+    link: "./files/2023-Estate-Planning-Worksheet.pdf",
   },
   {
     form: "Duties of Trustee",

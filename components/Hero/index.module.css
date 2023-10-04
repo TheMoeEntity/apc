@@ -131,13 +131,13 @@
     padding: 0px 40px;
   }
   .caption h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .caption h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .caption span {
     width: 90%;

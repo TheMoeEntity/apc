@@ -22,7 +22,7 @@ const Footer = () => {
             Nosrati Law Group, APC, a boutique client-centered practice
             specializing in estate planning
           </p>
-          <strong>Business Hours :</strong> Monday Sat: 8:30am to 6:00pm
+          <strong>Business Hours :</strong> Monday Sat: 8:30 - 6:00
           <div className={styles.icons}>
             <i className="fa-brands fa-facebook"></i>
             <i className="fa-brands fa-twitter"></i>

@@ -34,7 +34,7 @@ const Hero = () => {
           </div> */}
           <div>
             <h1>
-              {`It's`} never too early to plan for your {`family's `}future
+              {`It's`} Never too early to plan for your {`family's `}future
             </h1>
           </div>
           <div>

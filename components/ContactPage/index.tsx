@@ -90,7 +90,7 @@ const Contact = () => {
           </h2>
           <div>
             <p>
-              Snosratilaw.com <br /> Nosratiestateplanning.com,
+              snosratilaw@gmail.com <br /> Nosratiestateplanning.com,
             </p>
           </div>
         </div>

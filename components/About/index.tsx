@@ -48,8 +48,8 @@ const About = () => {
             protect, we will personalize an estate plan that best meets your
             needs. <br /> <br />
             We look forward to serving your estate planning needs and earning
-            your trust and business. Please call or email us for a free thirty
-            minute confidential consultation.
+            your trust and business. Please call or email us for a free 30
+            minutes confidential consultation.
           </p>
           <div className={styles.abzt}>
             <Link href="/about">

@@ -23,8 +23,8 @@ const Header = () => {
             &times;
           </div>
           <ul>
-            <li>
-              <span>Home</span>
+            <li onClick={() => setSideBar(false)}>
+              <Link href={`/`}>Home</Link>
             </li>
             <li onClick={() => setSideBar(false)}>
               <Link href={`/about`}>About</Link>
@@ -71,7 +71,7 @@ const Header = () => {
         <div>
           <div>
             <i style={{ color: "#B7A189" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 8.30 am - 6.00 pm &nbsp;&nbsp;&nbsp;&nbsp;
+            Mon-Fri: 8.30 - 6.00 &nbsp;&nbsp;&nbsp;&nbsp;
             <span
               onClick={() => router.push("/#contact")}
               className={styles.freeConsult}

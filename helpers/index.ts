@@ -23,7 +23,7 @@ export const tableAssets: tableAssetType[] = [
   {
     form: "Client Intake Form",
     Description: `Capture client details for personalized service.`,
-    link: "./files/client-intake-form.docx",
+    link: "./files/client-intake-form.pdf",
   },
   {
     form: "Estate Planning Organizer",

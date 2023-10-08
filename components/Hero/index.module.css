@@ -62,7 +62,8 @@
 }
 .caption h1 {
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 1.5;
   font-family: "Trajan-Regular";
 }
 .overlay {
@@ -131,13 +132,13 @@
     padding: 0px 40px;
   }
   .caption h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .caption h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
   .caption span {
     width: 90%;

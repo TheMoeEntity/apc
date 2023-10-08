@@ -54,7 +54,7 @@ const AboutPage = () => {
               we will personalize an estate plan that best meets your needs.{" "}
               <br /> <br /> We look forward to serving your estate planning
               needs and earning your trust and business. Please call or email us
-              for a free one-hour confidential consultation. <br /> <br />
+              for a free 30 minutes confidential consultation. <br /> <br />
             </p>
           </div>
         </div>

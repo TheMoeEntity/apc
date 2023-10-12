@@ -83,14 +83,14 @@ const Header = () => {
       </div>
       <div className={`${styles.headerTwo} ${sticky}`}>
         <div className={styles.logo} onClick={() => LinkAction("")}>
-          <Image
-            src={logo}
+          {/* <Image
+            src="/images/logo-option3.png"
             alt="card-image"
             fill={true}
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
+          /> */}
         </div>
         <div className={styles.links}>
           <ul>

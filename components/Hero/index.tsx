@@ -7,24 +7,24 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <Image
+      {/* <Image
         alt="Banner-img"
-        src={banner2}
+        src={"/images/shutter1_11zon.jpg"}
         fill={true}
         quality={100}
         priority={true}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
+      /> */}
       <div className={styles.caption}>
         <div>
-          <Image
+          {/* <Image
             alt="Headshot"
             src={headshot}
             fill={true}
             quality={100}
             priority={true}
             sizes="(max-width: 1038px) 100vw, (max-width: 1038px) 50vw, 33vw"
-          />
+          /> */}
         </div>
         <div>
           {/* <div>

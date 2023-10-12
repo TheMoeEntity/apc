@@ -104,7 +104,7 @@ export const useSubmit = (val: string) => {
     }
 
     try {
-      const url = "/api/contact";
+      const url = "/api/consult";
       const res = await axios.post(url, data);
 
       res.status === 200 &&

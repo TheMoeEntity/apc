@@ -9,14 +9,14 @@ const Footer = () => {
       <div className={styles.grid}>
         <div>
           <div className={styles.logo}>
-            <Image
+            {/* <Image
               src={logo}
               alt="logo"
               fill={true}
               quality={100}
               priority={true}
               sizes="(max-width: 800px) 100vw, (max-width: 800px) 50vw, 33vw"
-            />
+            /> */}
           </div>
           <p>
             Nosrati Law Group, APC, a boutique client-centered practice

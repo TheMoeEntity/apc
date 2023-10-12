@@ -45,6 +45,10 @@
   width: calc(0.27 * 1038px);
   max-width: 100%;
   margin-right: 60px;
+  background-image: url("/images/headshot_11zon.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .main > div:nth-child(1) > img {
   object-fit: contain !important;

@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: true,
+  // trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  distDir: "dist",
   output: "export",
 };
 
-module.exports = {
-  experimental: {
-    serverActions: true,
-  },
-};
+module.exports =
+  // nextConfig;
+  {
+    experimental: {
+      serverActions: true,
+    },
+  };

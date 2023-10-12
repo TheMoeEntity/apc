@@ -529,10 +529,19 @@
   width: calc(0.22 * 1116px);
   height: calc(0.22 * 212px);
   position: relative;
+  background-image: url("/images/logo-option3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 .header .logo {
   width: calc(0.28 * 1116px);
   height: calc(0.28 * 212px);
+  background-image: url("/images/logo-option3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 .footer .logo img,

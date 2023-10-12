@@ -44,6 +44,10 @@
   transition: 0.88s;
   width: calc(0.084 * 6144px);
   max-width: 100%;
+  background-image: url("/images/shutter1_11zon.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .main > div:nth-child(1) img {
   object-fit: contain !important;

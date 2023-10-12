@@ -16,14 +16,14 @@ const ProcessPage = () => {
       <div className={styles.about}>
         <div className={styles.main}>
           <div className={styles.man}>
-            <Image
+            {/* <Image
               src={man}
               alt="card-image"
               fill={true}
               quality={100}
               priority={true}
               sizes="(max-width: 2901px) 100vw, (max-width: 2901px) 50vw, 33vw"
-            />
+            /> */}
           </div>
           <div className={styles.stuff}>
             <h2>ESTATE PLANNING PROCESS</h2>

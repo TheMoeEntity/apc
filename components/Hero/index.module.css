@@ -6,6 +6,10 @@
   width: 100%;
   height: 600px;
   position: relative;
+  background-image: url("/images/shutter1_11zon.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero img {
   object-fit: cover;
@@ -31,6 +35,10 @@
   height: calc(0.081 * 3934px);
   width: calc(0.081 * 4837px);
   /* width: 40%; */
+  background-image: url("/images/hero-3.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
   position: relative;
 }
 .caption > div:first-child img {

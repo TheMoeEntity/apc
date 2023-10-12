@@ -1,10 +1,11 @@
 "use client";
 import styles from "./index.module.css";
-import { useResize } from "../../helpers/hooks";
+import { useContact, useResize } from "../../helpers/hooks";
 import { useHero } from "../../helpers/hooks/useHero";
 
 const Contact = () => {
   const { val, setVal, textAreaRef } = useResize();
+  const { submit, handlesubmit } = useContact(val);
   return (
     <div className={styles.contact}>
       {useHero("", "Contact Us", styles.hero, styles.caption, styles.line)}
@@ -26,7 +27,7 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <form action="">
+          <form onSubmit={handlesubmit}>
             <div className={styles.line}></div>
             <h1>Contact Us</h1>
             <div className={styles.formGroup}>
@@ -47,7 +48,7 @@ const Contact = () => {
               onChange={(e) => setVal(e.target.value)}
             ></textarea>
             <button className={styles.btn} type="submit">
-              SUBMIT NOW
+              {submit}
             </button>
           </form>
         </div>

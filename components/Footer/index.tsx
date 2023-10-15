@@ -128,6 +128,10 @@ const Footer = () => {
               <Link href="/fees">Fees</Link> <i className="fas fa-circle"></i>
             </li>
             <li>
+              <Link href="/resources">Resources</Link>{" "}
+              <i className="fas fa-circle"></i>
+            </li>
+            <li>
               <Link href="/contact">Contact</Link>
             </li>
           </ul>

@@ -126,12 +126,7 @@
   height: auto;
   margin: 20px 0 0 20px;
 }
-@media screen and (max-width: 600px) {
-  .hero {
-    height: 300px;
-    background-position: left;
-    background-attachment: scroll;
-  }
+@media screen and (max-width: 768px) {
   .grid > div > div:nth-child(1) {
     padding: 15px 10px;
   }
@@ -147,5 +142,12 @@
   .profile {
     width: 70px;
     height: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 300px;
+    background-position: left;
+    background-attachment: scroll;
   }
 }

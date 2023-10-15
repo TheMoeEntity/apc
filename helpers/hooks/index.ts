@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useSnackbar } from "notistack";
 import {
   FormEvent,
@@ -34,6 +34,24 @@ export const useSticky = (styles: string) => {
 export const useLinks = () => {
   const router = useRouter();
   const [links, setLinks] = useState<linkType[]>(Helpers.links);
+  const pathname = usePathname();
+  useEffect(() => {
+    console.log(pathname.slice(1, pathname.length));
+    setLinks((currLink) => {
+      const newLink = currLink.map((x) =>
+        x.href === pathname.slice(1, pathname.length)
+          ? {
+              ...x,
+              isActive: true,
+            }
+          : {
+              ...x,
+              isActive: false,
+            }
+      );
+      return newLink;
+    });
+  }, [pathname]);
   const LinkAction = (page: string) => {
     setLinks((currLink) => {
       const newLink = currLink.map((x) =>

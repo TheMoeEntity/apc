@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // trailingSlash: true,
-  skipTrailingSlashRedirect: true,
-  distDir: "dist",
+  // skipTrailingSlashRedirect: true,
+  // distDir: "dist",
   output: "export",
 };
 

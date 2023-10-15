@@ -294,6 +294,7 @@
   }
   .aboutSophie {
     flex-flow: column wrap;
+    width: 100%;
   }
   .aboutSophie > div:nth-child(1) {
     flex: 40%;
@@ -306,7 +307,7 @@
   .aboutSophie > div:nth-child(2) {
     padding-left: 0px;
   }
-  .aboutSophie > div:first-of-type {
+  .aboutSophie > div:nth-child(1) {
     margin: 10px 0;
   }
   .educationText {
